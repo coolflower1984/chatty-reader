@@ -91,7 +91,7 @@ cd chatty-reader
 
 `local.properties` 里写 `sdk.dir=/path/to/android-sdk`（该文件已在 `.gitignore` 中）。
 
-仓库内的 `releases/chatty-reader-v4.5.apk` 是可直接安装的成品包。
+仓库内的 `releases/chatty-reader-v4.5.apk` 是可直接安装的成品包，也可以从 [Releases](https://github.com/coolflower1984/chatty-reader/releases) 页下载同一份。
 
 ---
 
