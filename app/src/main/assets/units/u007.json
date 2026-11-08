@@ -1,0 +1,177 @@
+{
+  "unit": 7,
+  "title": "Unit 7",
+  "words": [
+    {
+      "no": 61,
+      "word": "sprinkle",
+      "phonetic": "ˈspriŋkəl",
+      "zh": "n. 少量，少数 v. 撒，洒",
+      "guess": "The recipe says to sprinkle a little salt on the tomatoes before serving. Do not stir them; just let the salt sit on top.",
+      "guessQ": "How much salt should you sprinkle on the tomatoes?",
+      "meaningEn": "To sprinkle something is to scatter small amounts of it over a surface. The recipe asks you to sprinkle salt on the tomatoes, a little at a time, and then leave them alone.",
+      "context": "Rather than raise rates once and sharply, the central bank has sprinkled small increases across three meetings, hoping to avoid alarming the markets. The approach has been criticised as too gradual to restrain credit growth, and too timid to be read as a warning.",
+      "idx": 1
+    },
+    {
+      "no": 62,
+      "word": "acute",
+      "phonetic": "əˈkjuːt",
+      "zh": "adj. 严重的；急性的；灵敏的，敏锐的；精明的",
+      "guess": "After three days without water, the climbers were in acute danger. They had to be rescued that night.",
+      "guessQ": "Why is the danger described as acute?",
+      "meaningEn": "Acute means severe, and usually sudden. An acute shortage is one that cannot wait; an acute mind is one that notices quickly. The climbers were in acute danger because their water had run out.",
+      "context": "The shortage of nurses is most acute in rural districts, where hospitals compete for staff with cities that offer higher pay and better schools. National averages hide the problem: a figure that looks manageable in aggregate conceals severe local gaps.",
+      "idx": 2
+    },
+    {
+      "no": 63,
+      "word": "shipment",
+      "phonetic": "ˈʃipmənt",
+      "zh": "n. 装运，装船；装载（或运输）的货物",
+      "guess": "The books were supposed to arrive on Monday. The shipment was held at the port for two weeks, so the shop had empty shelves on opening day.",
+      "guessQ": "What delayed the shipment of books?",
+      "meaningEn": "A shipment is a quantity of goods sent from one place to another, or the act of sending them. The shipment of books was held at the port, so the shop opened with empty shelves.",
+      "context": "Exporters complain that the new inspection rules add four days to every shipment, which matters little for furniture and a great deal for fruit. For perishable goods a delay at the border works like a tariff, and is just as hard to plan for.",
+      "idx": 3
+    },
+    {
+      "no": 64,
+      "word": "comparable",
+      "phonetic": "ˈkɔmpərəbl",
+      "zh": "adj. 可比较的，类似的；比得上的",
+      "guess": "The two flats are similar in size, but the rents are not comparable. One costs twice as much as the other, for reasons nobody can explain.",
+      "guessQ": "Why are the two rents not comparable?",
+      "meaningEn": "Two things are comparable when they are similar enough to be measured against each other. The flats were comparable in size but not in rent, so the two prices told different stories.",
+      "context": "Public-sector salaries are set against comparable private-sector roles, a method that works well for accountants and badly for teachers, whose work has no obvious market equivalent. The resulting gaps are defended as technical adjustments, though the staff who lose out rarely see them that way.",
+      "idx": 4
+    },
+    {
+      "no": 65,
+      "word": "spy",
+      "phonetic": "spai",
+      "zh": "n. 间谍 vt. 看见，发现 vi. 当间谍；暗中监视（或侦察）",
+      "guess": "From the hill you can spy the whole harbour, if the weather is clear. We sat there for an hour and watched the boats come in.",
+      "guessQ": "What could you spy from the top of the hill?",
+      "meaningEn": "To spy on someone is to watch them secretly, usually to learn something they want to hide. The word can also mean simply to catch sight of something from a distance. From the hill you could spy the whole harbour.",
+      "context": "The company was accused of using customer data to spy on the browsing habits of children, a charge it denies. Regulators are now asking whether consent obtained through a single button can ever be meaningful, and how far informed agreement can be stretched.",
+      "idx": 5
+    },
+    {
+      "no": 66,
+      "word": "pedestrian",
+      "phonetic": "piˈdestriən",
+      "zh": "n. 步行者，行人",
+      "guess": "The road has no pavement, so pedestrians walk on the edge of it. In winter, when the light goes early, it is genuinely dangerous.",
+      "guessQ": "Why is the road dangerous for pedestrians in winter?",
+      "meaningEn": "A pedestrian is a person travelling on foot, usually on or beside a road. The road had no pavement, so pedestrians walked at the edge of the traffic.",
+      "context": "Cities that give pedestrians priority at crossings report fewer serious injuries, even where traffic volumes are unchanged. The explanation is attention: drivers who expect to stop look for people instead of watching for gaps. Cheap paint, it turns out, can beat a speed limit.",
+      "idx": 6
+    },
+    {
+      "no": 67,
+      "word": "interaction",
+      "phonetic": "ˌintərˈækʃən",
+      "zh": "n. 相互作用；干扰",
+      "guess": "The best part of the course was not the lectures but the interaction with other students. We argued for hours after each class.",
+      "guessQ": "Why did interaction matter more to her than the lectures?",
+      "meaningEn": "Interaction is what happens when people or things act on one another — talking, answering, adjusting. The course was valuable for its interaction: students learned from the arguments they had with each other.",
+      "context": "Remote teams do not lack meetings; they lack the unplanned interaction that builds trust. A five-minute conversation by the coffee machine does work that a scheduled call cannot, which is why some firms now pay for staff to meet in person.",
+      "idx": 7
+    },
+    {
+      "no": 68,
+      "word": "faculty",
+      "phonetic": "ˈfækəlti",
+      "zh": "n. 才能，能力；系，科；全体教员",
+      "guess": "He lost the faculty of speech after the accident, though he could still understand everything said to him. It returned slowly, over two years.",
+      "guessQ": "Which faculty did he lose in the accident?",
+      "meaningEn": "A faculty is a natural power of the mind or body, such as speech, sight or memory. A faculty can also be a department of a university. He lost the faculty of speech, though he understood everything said to him.",
+      "context": "Universities are reorganising their faculties around problems rather than disciplines, so that engineers and economists share a budget and a building. The gains are real but slow, since promotion still rewards work published within a single field, and younger researchers learn the old rules quickly.",
+      "idx": 8
+    },
+    {
+      "no": 69,
+      "word": "clutch",
+      "phonetic": "klʌtʃ",
+      "zh": "n. （汽车、机器等的）离合器；［常pl.］掌握，控制；把握，抓紧 vt. 抓紧，紧握 vi. 企图抓住",
+      "guess": "She ran for the bus with her ticket in her hand, clutching her bag against her chest. When the doors closed, she was still holding it.",
+      "guessQ": "Why was she clutching her bag so tightly?",
+      "meaningEn": "To clutch something is to hold it tightly, as if afraid of losing it. The noun has a separate meaning: the pedal that connects a car's engine to its wheels. She clutched her bag against her chest as she ran.",
+      "context": "Households in the survey were found to be clutching their savings rather than spending them, despite low interest rates and steady employment. The pattern usually reflects uncertainty about the future rather than the cost of borrowing, and it outlasts the event that caused it.",
+      "idx": 9
+    },
+    {
+      "no": 70,
+      "word": "biography",
+      "phonetic": "baiˈɔɡrəfi",
+      "zh": "n. 传记",
+      "guess": "I read a biography of a pilot who flew across the ocean alone in 1932. The book was long, but the flying parts were wonderful.",
+      "guessQ": "Whose life does the biography describe?",
+      "meaningEn": "A biography is the written story of a person's life, told by someone else. This biography followed a pilot through a single flight across the ocean.",
+      "context": "Publishers have found that a biography of a scientist sells better when it is built around one experiment than when it covers an entire career, however distinguished. Readers, it seems, prefer a single sharp story to a balanced account of forty years.",
+      "idx": 10
+    }
+  ],
+  "reading": {
+    "title": "The Street Without Cars",
+    "text": "The council closed the main street to traffic for six months as an experiment. Shops could still receive shipments, but only before eight, when small electric vans were allowed through. After that the street belonged to pedestrians, and the only wheels on it were bicycles and pushchairs.\n\nThe first results were not the ones anyone expected. Footfall rose by a fifth, but so did complaints from drivers looking for parking; the shortage became acute. A team from the university's engineering faculty measured noise and air quality and found changes comparable to those recorded in far larger cities. Not everything could be counted: interaction between strangers rose sharply, and nobody could say why.\n\nThe council had installed cameras, it said, not to spy on shoppers but to count them. A journalist writing a biography of the planner found the idea had been borrowed from a town of nine thousand people. Critics seized on this, and for a week the scheme looked fragile. Then came the first icy morning: workers sprinkled salt on the paving, and by nine the street was full again, parents clutching children's hands against the wind.",
+    "questions": [
+      {
+        "q": "Deliveries were permitted only before eight in order to",
+        "options": [
+          "reduce the number of vans entering the street",
+          "keep the street clear for walking during the day",
+          "allow local shops to open much earlier than usual",
+          "test a new kind of electric delivery vehicle"
+        ],
+        "answer": 1,
+        "why": "首段写八点前放行小货车，之后整条街都归行人，限时送货正是为白天把路让出来。A 只说到减少车辆，漏掉了“让路给行人”这一层。"
+      },
+      {
+        "q": "The changes measured by the engineering faculty were",
+        "options": [
+          "smaller than the team had predicted at the start",
+          "impossible to compare with the results of earlier surveys",
+          "similar to those found in much larger cities",
+          "limited to air quality at the two ends of the street"
+        ],
+        "answer": 2,
+        "why": "第二段说这里的变化与远大于此的城市相当，C 是同义替换。A 把 comparable 读成“更小”，B 否定可比性，D 则把范围缩小到空气质量。"
+      },
+      {
+        "q": "According to the third paragraph, the cameras were installed to",
+        "options": [
+          "identify drivers who ignored the new traffic rules",
+          "gather images for a biography of the planner",
+          "provide useful evidence for the council's many critics",
+          "count how many people used the street each day"
+        ],
+        "answer": 3,
+        "why": "原文明确说装摄像头不是为了监视顾客，而是要数人流。A、C 都把 spy 读成监控取证，与 but 之后的真正目的相反。"
+      },
+      {
+        "q": "Critics argued that the scheme was weakened by the fact that",
+        "options": [
+          "it had been copied from a much smaller town",
+          "the planner had never visited the town herself",
+          "the cameras had cost far more than expected",
+          "the pavement was too narrow for summer crowds"
+        ],
+        "answer": 0,
+        "why": "第三段说点子是借自一个只有九千人的小镇，批评者抓住的正是“照抄小地方”这一点。B、C、D 在文中都找不到依据。"
+      },
+      {
+        "q": "The final sentence suggests that the street's success depended on",
+        "options": [
+          "the council's decision to salt the paving each morning",
+          "the arrival of colder weather in the town",
+          "people's willingness to keep using it in bad weather",
+          "the journalist's report being published in the paper"
+        ],
+        "answer": 2,
+        "why": "末句写结冰的早晨撒盐后，九点街道又满了，人们照常出门。A 把撒盐当原因，其实那只是应对天气；成功靠的是行人的意愿。"
+      }
+    ]
+  }
+}

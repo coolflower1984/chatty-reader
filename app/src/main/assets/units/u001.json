@@ -1,0 +1,179 @@
+{
+  "unit": 1,
+  "list": 1,
+  "group": 1,
+  "title": "Unit 1",
+  "words": [
+    {
+      "no": 1,
+      "word": "spite",
+      "phonetic": "spaɪt",
+      "zh": "n. 恶意，怨恨；不顾  vt. 刁难，欺侮",
+      "guess": "Tom was passed over for a promotion. Out of spite, he told everyone in the office that his manager's project would fail. He did not care whether it was true; he only wanted to hurt her.",
+      "guessQ": "What do you think spite means here?",
+      "meaningEn": "Spite is the wish to hurt someone because you are angry or feel you have been treated unfairly. In this story Tom acted out of spite: he wanted to harm his manager, not to fix anything.",
+      "context": "Critics of the reform argued that much of the opposition was driven by spite rather than principle: legislators who had been excluded from the drafting process voted against measures they privately supported, simply to embarrass the minister. In spite of the bill's obvious merits, it was rejected by a narrow margin.",
+      "idx": 1
+    },
+    {
+      "no": 2,
+      "word": "luxury",
+      "phonetic": "ˈlʌkʃəri",
+      "zh": "n. 奢侈；奢侈品",
+      "guess": "After three months of camping, a hot shower felt like a luxury to Maya. She had forgotten how good it was to have clean water whenever she wanted it.",
+      "guessQ": "So what does luxury mean in this sentence?",
+      "meaningEn": "A luxury is something pleasant that you do not really need, usually because it is expensive or rare. The word can also mean great comfort and expense in general.",
+      "context": "For most of human history, privacy was a luxury reserved for the wealthy; ordinary families slept, ate and worked in the same room. Only when housing became cheap enough did solitude turn into something people expected, rather than something they saved up for.",
+      "idx": 2
+    },
+    {
+      "no": 3,
+      "word": "accommodate",
+      "phonetic": "əˈkɒmədeɪt",
+      "zh": "vt. 容纳；向…提供住处（或膳宿）；使适应，顺应",
+      "guess": "The small hotel could only accommodate thirty guests, yet it never turned anyone away. When a tour bus arrived with forty people, the owner simply brought out folding beds.",
+      "guessQ": "What do you think accommodate means here?",
+      "meaningEn": "To accommodate people is to give them room, either by having enough space or by providing them with a place to stay. It can also mean to change your plans so that they fit someone else's needs.",
+      "context": "The new library was designed to accommodate twice as many readers as the old one, but the architects also had to accommodate disabled visitors: ramps, wider aisles and quiet rooms were added at a late stage, which pushed the budget up by a fifth.",
+      "idx": 3
+    },
+    {
+      "no": 4,
+      "word": "primarily",
+      "phonetic": "ˈpraɪmərəli",
+      "zh": "adv. 首先，主要地",
+      "guess": "The course is primarily about writing, although it covers a little grammar as well. Most of the time you will be writing, not memorising rules.",
+      "guessQ": "What does primarily tell us about the course?",
+      "meaningEn": "Primarily means mainly. It points to the largest or most important part, but it leaves room for other, smaller parts.",
+      "context": "The decline in bee populations is primarily attributed to habitat loss, although pesticides and disease also play a part. Because the causes are multiple, no single policy is likely to reverse the trend; farmers, regulators and researchers will each have to change something.",
+      "idx": 4
+    },
+    {
+      "no": 5,
+      "word": "setback",
+      "phonetic": "ˈsetbæk",
+      "zh": "n. 挫折，倒退，失败",
+      "guess": "The team lost its best player to injury in the first match. It was a serious setback, but they still finished the season in third place.",
+      "guessQ": "What do you think a setback is?",
+      "meaningEn": "A setback is a problem that delays your progress or makes your situation worse. It is a step backwards on the way to a goal, not the end of the journey.",
+      "context": "The vaccine trial suffered a serious setback when two volunteers developed unexpected side effects, forcing researchers to pause enrolment for six weeks. The delay cost the company an estimated two hundred million dollars and pushed delivery into the following winter.",
+      "idx": 5
+    },
+    {
+      "no": 6,
+      "word": "restrain",
+      "phonetic": "rɪˈstreɪn",
+      "zh": "vt. 阻止，控制；抑制，遏制",
+      "guess": "When the referee made an unfair call, the coach wanted to shout at him. Somehow he managed to restrain himself and said nothing at all.",
+      "guessQ": "What did the coach do when he restrained himself?",
+      "meaningEn": "To restrain someone or something is to hold it back, to stop it from moving or from doing what it wants to do. When you restrain yourself, you control a strong feeling instead of acting on it.",
+      "context": "Central banks raised interest rates in an attempt to restrain inflation, but the effect was slower than expected: households drew on savings built up during the pandemic, and demand did not fall until the following spring.",
+      "idx": 6
+    },
+    {
+      "no": 7,
+      "word": "gossip",
+      "phonetic": "ˈɡɒsɪp",
+      "zh": "n. 流言蜚语；爱说长道短的人  vi. 传播流言蜚语",
+      "guess": "Every office has one: a person who spends the morning telling everyone what the manager said to whom. Most of it turns out to be gossip, not fact.",
+      "guessQ": "What does gossip mean here?",
+      "meaningEn": "Gossip is talk about other people's private lives, often unkind and often untrue. The same word can also describe the person who spreads such talk.",
+      "context": "In small communities, gossip works as a form of social control: when everyone knows everyone, the fear of being talked about keeps people polite. In cities, where neighbours remain strangers, that mechanism simply disappears.",
+      "idx": 7
+    },
+    {
+      "no": 8,
+      "word": "reward",
+      "phonetic": "rɪˈwɔːd",
+      "zh": "n. 报答，奖赏；报酬，酬金  vt. 报答，酬谢，奖励",
+      "guess": "She spent three years learning the violin, and the reward came when she was asked to play in the school orchestra. Nobody paid her; being chosen was enough.",
+      "guessQ": "What was the reward in this story?",
+      "meaningEn": "A reward is something good that you receive for doing something: money, praise, or simply a good result. As a verb, to reward means to give someone something in return for what they have done.",
+      "context": "Economists have long debated whether to reward students for good grades. Early programmes did raise test scores, but the gains faded once payments stopped, suggesting that children had learned to work for cash rather than for the pleasure of understanding.",
+      "idx": 8
+    },
+    {
+      "no": 9,
+      "word": "maintain",
+      "phonetic": "meɪnˈteɪn",
+      "zh": "vt. 维持；维修，保养；主张；赡养",
+      "guess": "The old bridge is inspected every year, because the city has to maintain it. If nobody repairs it, it will eventually collapse.",
+      "guessQ": "What does it mean to maintain a bridge?",
+      "meaningEn": "To maintain something is to keep it in good condition, or to keep it at the same level. The word can also mean to state firmly that something is true, as in: he maintains that he was never there.",
+      "context": "It is far cheaper to maintain a road than to rebuild it, yet governments routinely postpone repairs until the surface fails. The result is a cycle of short-term savings followed by bills several times larger than the original work would have cost.",
+      "idx": 9
+    },
+    {
+      "no": 10,
+      "word": "define",
+      "phonetic": "dɪˈfaɪn",
+      "zh": "vt. 给…下定义，限定",
+      "guess": "Before the debate, the teacher asked the class to define the word fair. Half the students wrote something different, which was exactly her point.",
+      "guessQ": "What does define mean here?",
+      "meaningEn": "To define a word is to say exactly what it means. To define a problem is to mark its limits: what counts as part of it, and what does not.",
+      "context": "How a society defines poverty determines who receives help. Measured in absolute terms, poverty has fallen sharply for thirty years; measured relative to the median income, it has barely moved. The same country can therefore appear both a success and a failure.",
+      "idx": 10
+    }
+  ],
+  "reading": {
+    "title": "The Small Library",
+    "text": "When the town council announced that the old library would close, the reaction was primarily emotional. Nobody had borrowed a book there in years, yet the building defined the centre of the town: the market, the school and the bus stop had all arranged themselves around it.\n\nThe closure was, in part, a matter of money. Maintaining a building that few people used had become a luxury the council could no longer justify. The first proposal was to accommodate the collection in a corner of the town hall, a plan that suffered an immediate setback when engineers reported that the floor could not carry the weight.\n\nWhat followed was six months of gossip. Some said the mayor had acted out of spite after the librarian criticised him in public; others insisted that he had simply failed to restrain his officials. In the end a compromise was reached: the building would stay open two days a week, staffed by volunteers. The reward was not financial. Attendance doubled within a year.",
+    "questions": [
+      {
+        "q": "The reaction to the announcement is described as \"primarily emotional\" because",
+        "options": [
+          "the library was the town's only public building",
+          "the building shaped how residents pictured the town centre",
+          "most residents still borrowed books there every week",
+          "the council had refused to explain its decision"
+        ],
+        "answer": 1,
+        "why": "第一段就说 the building defined the centre of the town，市场、学校、车站都围着它排布——是心理地标，不是使用频率。A、C 与原文相反，D 未提及。"
+      },
+      {
+        "q": "The council regarded maintaining the library as a \"luxury\" mainly because",
+        "options": [
+          "the building was architecturally valuable",
+          "it cost more than local taxes could support",
+          "few people used it, so the expense was hard to defend",
+          "volunteers were unwilling to staff it"
+        ],
+        "answer": 2,
+        "why": "原文：a building that few people used had become a luxury the council could no longer justify——«用的人太少» 是不敢再拨款的理由。B 把 “难以辩护” 换成了 “财政上不可能”，属于偷换。"
+      },
+      {
+        "q": "The plan to move the collection into the town hall failed because",
+        "options": [
+          "the town hall was too small for the shelves",
+          "the collection was too valuable to be moved",
+          "engineers found the floor could not bear the load",
+          "the librarian refused to cooperate"
+        ],
+        "answer": 2,
+        "why": "the floor could not carry the weight，与 C 同义。注意选项把 engineers reported 保留了下来，是最直接的一处同义替换。"
+      },
+      {
+        "q": "What does the passage imply about the gossip?",
+        "options": [
+          "It was confirmed by council records later on",
+          "It offered explanations that nobody could verify",
+          "It delayed the compromise by more than a year",
+          "It was started by the librarian herself"
+        ],
+        "answer": 1,
+        "why": "Some said... others insisted...——两种说法并列且都无出处，作者没有裁定谁对。这类 “some say / others insist” 的并列，往往暗示传言无法核实。"
+      },
+      {
+        "q": "The word \"reward\" in the last paragraph refers to",
+        "options": [
+          "the payment given to the volunteers",
+          "the doubling of attendance within a year",
+          "the money the council saved",
+          "the mayor's improved reputation"
+        ],
+        "answer": 1,
+        "why": "The reward was not financial. Attendance doubled within a year. ——前句否定金钱，后句给出真正的回报，指代关系一目了然。"
+      }
+    ]
+  }
+}

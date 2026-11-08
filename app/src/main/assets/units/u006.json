@@ -1,0 +1,177 @@
+{
+  "unit": 6,
+  "title": "Unit 6",
+  "words": [
+    {
+      "no": 51,
+      "word": "compliment",
+      "phonetic": "ˈkɔmplimənt",
+      "zh": "n. 赞美（话），恭维（话） [pl.] 致意，问候 ｜ [ˈkɔmpliment] vt. 赞美，恭维",
+      "guess": "After the talk, an old man came up and said her slides were the clearest he had seen all year. It was a kind compliment from a stranger, and it made her week.",
+      "guessQ": "Why did the compliment matter so much to her?",
+      "meaningEn": "A compliment is a remark that praises someone, often about their work or appearance. To compliment someone is to say something nice to them. The stranger complimented her slides, and the words stayed with her for days.",
+      "context": "Performance reviews that open with a compliment and close with a demand are read as manipulation rather than praise; staff discount the positive part entirely. Feedback is remembered longer, studies find, when it is specific and unwelcome — yet managers keep using the formula.",
+      "idx": 1
+    },
+    {
+      "no": 52,
+      "word": "poverty",
+      "phonetic": "ˈpɔvəti",
+      "zh": "n. 贫穷，贫困",
+      "guess": "The family had little money and often went without heat in winter. Growing up in poverty, Ana learned to repair her own shoes before she was ten.",
+      "guessQ": "How did poverty shape Ana's childhood?",
+      "meaningEn": "Poverty is the state of being very poor, without enough money for the basic things a person needs. Ana grew up in poverty, which taught her to repair what others would have thrown away.",
+      "context": "Measured before housing costs, child poverty in the region fell by a third; measured after them, it rose. The choice of definition is not technical but political, since it decides which families appear in the statistics and which quietly disappear.",
+      "idx": 2
+    },
+    {
+      "no": 53,
+      "word": "scandal",
+      "phonetic": "ˈskændl",
+      "zh": "n. 丑事，丑闻；流言蜚语；反感，愤慨",
+      "guess": "The newspaper found that the charity's director had been paying himself from donations. The scandal forced him to resign within a week.",
+      "guessQ": "Why did the story become a scandal?",
+      "meaningEn": "A scandal is an event that shocks the public because people who were trusted have done something dishonest. The director's payments became a scandal because the money had been given for the poor.",
+      "context": "The collapse of the contractor became a scandal less because of the sums lost than because of how long the warning signs had been visible. Regulators had received nine complaints over four years and had investigated none of them; two of the complainants wrote again, and were ignored twice.",
+      "idx": 3
+    },
+    {
+      "no": 54,
+      "word": "overthrow",
+      "phonetic": "ˌəuvəˈθrəu",
+      "zh": "n. 推翻；终止，结束 vt. 打倒；使终止，摒弃",
+      "guess": "For years the committee ran the club badly, but nobody dared to challenge it. In the end a group of younger members organised a vote and managed to overthrow the old leadership.",
+      "guessQ": "Why did it take years to overthrow the committee?",
+      "meaningEn": "To overthrow a leader or a system is to remove it from power, usually after a struggle. The younger members overthrew the committee by winning a vote, which took three years of quiet argument.",
+      "context": "The chief executive was overthrown by his own board after a single bad quarter, a speed that surprised analysts. Textbook accounts of governance assume such decisions are slow and contested; here the vote took eleven minutes, and the minutes record no discussion at all.",
+      "idx": 4
+    },
+    {
+      "no": 55,
+      "word": "repression",
+      "phonetic": "riˈpreʃən",
+      "zh": "n. 压抑，压制；镇压",
+      "guess": "He never shouted, even when he was furious. Years of repression had taught him to keep every feeling behind his face.",
+      "guessQ": "What had years of repression taught him?",
+      "meaningEn": "Repression is the keeping down of feelings or urges so that they never reach the surface. It can also mean the use of force to stop people from expressing themselves. His calm was a form of repression: the anger was there, simply never shown.",
+      "context": "Psychologists distinguish suppression, which is deliberate, from repression, which happens without awareness. In offices the second is costlier: staff who habitually bury irritation report far higher exhaustion a year later, and are more likely to leave. Managers who read calm as agreement are usually wrong.",
+      "idx": 5
+    },
+    {
+      "no": 56,
+      "word": "abstract",
+      "phonetic": "ˈæbstrækt",
+      "zh": "n. 摘要，梗概；抽象派艺术作品 adj. 抽象的，抽象派的 ｜ [æbˈstrækt] vt. 做…的摘要；提取，抽取",
+      "guess": "The children could count real apples but not add numbers on a page. The idea of seven, with nothing to count, was too abstract for them.",
+      "guessQ": "What made the number on the page abstract?",
+      "meaningEn": "Abstract describes ideas that exist in thought rather than as objects you can touch. A number on a page is abstract because nothing in the room matches it exactly. The children managed apples but not the abstract idea of seven.",
+      "context": "Policy debates rarely reward abstract argument: a single case, told well, moves a committee further than a page of statistics. Researchers are therefore trained to translate findings into stories without distorting them, which is harder than it sounds; most fail in one direction or the other.",
+      "idx": 6
+    },
+    {
+      "no": 57,
+      "word": "ensue",
+      "phonetic": "inˈsjuː",
+      "zh": "vi. 接着发生，接踵而来，因…而产生",
+      "guess": "The fire alarm rang during the exam. In the confusion that ensued, half the students left their papers on the desks.",
+      "guessQ": "What happened in the minutes that ensued?",
+      "meaningEn": "If something ensues, it follows from what happened before, often as an unexpected result. Confusion ensued after the alarm: one event produced the next.",
+      "context": "When the subsidy was withdrawn without notice, a rush to install equipment before the deadline ensued, and the price of panels doubled within a fortnight. Officials had expected a smooth transition; they had not expected the market to behave like a queue.",
+      "idx": 7
+    },
+    {
+      "no": 58,
+      "word": "cognitive",
+      "phonetic": "ˈkɔɡnitiv",
+      "zh": "adj. 认知的，认识能力的",
+      "guess": "After two nights of bad sleep, Lea could not remember simple words. Her doctor said the problem was cognitive, not emotional: her brain was simply too tired to work.",
+      "guessQ": "Why did the doctor call the problem cognitive?",
+      "meaningEn": "Cognitive means concerned with thinking — with remembering, learning, noticing and deciding. Lea's problem was cognitive rather than emotional: her memory failed while her mood was normal.",
+      "context": "Long commutes are now counted as a cognitive cost rather than merely a loss of time: drivers who travel more than an hour do worse on tests of attention, and the gap persists into the evening. Rail passengers show a smaller effect.",
+      "idx": 8
+    },
+    {
+      "no": 59,
+      "word": "notion",
+      "phonetic": "ˈnəuʃən",
+      "zh": "n. 概念，观念；意图，想法，（怪）念头",
+      "guess": "My grandfather had a strange notion that thunder meant the weather would improve. He was wrong most of the time, but he never changed his mind.",
+      "guessQ": "What was the grandfather's notion about the weather?",
+      "meaningEn": "A notion is an idea or belief, often one held loosely and never tested. His notion about thunder was exactly that: a belief with nothing behind it.",
+      "context": "The notion that talent is fixed at birth has been quietly abandoned by most education systems, replaced by an emphasis on practice and feedback. The shift is recent, and its effects on what teachers actually do are still being measured.",
+      "idx": 9
+    },
+    {
+      "no": 60,
+      "word": "lubricate",
+      "phonetic": "ˈluːbrikeit",
+      "zh": "vt. 使润滑",
+      "guess": "The door had squeaked for months. My father put a drop of oil on the hinge to lubricate it, and the noise stopped at once.",
+      "guessQ": "Why did a drop of oil lubricate the hinge so well?",
+      "meaningEn": "To lubricate something is to put oil or grease on it so that its parts slide over each other easily. The oil lubricated the hinge, and the squeak stopped at once.",
+      "context": "Trade missions are often described as a way to lubricate relations between countries whose governments disagree; the meetings produce few contracts but keep channels open. Critics reply that such contact changes nothing until tariffs fall, and that goodwill is not a substitute for a deal.",
+      "idx": 10
+    }
+  ],
+  "reading": {
+    "title": "The Open Floor",
+    "text": "When the firm moved four hundred staff onto a single open floor, the decision rested on a simple notion: walls stop ideas from travelling. Consultants argued that chance encounters would lubricate communication between departments that had not spoken in years. The board, impressed by figures from a pilot study, approved it within a week.\n\nThe objections that ensued were not about noise at first, but about being watched. Staff reported a steady cognitive cost: simple tasks took longer, and the day ended in a tiredness that sleep did not fix. Then came the scandal. A journalist asked for the pilot data and found the numbers had been invented by a junior consultant. Within a year the policy was overthrown at a single meeting, three of five directors voting against the scheme they had praised.\n\nWhat replaced it is less abstract: small rooms, movable walls and two hours of silence every morning. Managers admit that the repression of ordinary annoyance had hidden the problem for months; people stopped objecting and started leaving. Visitors often compliment the result, and the firm's review notes the poverty of evidence behind the original design.",
+    "questions": [
+      {
+        "q": "The board approved the open-floor plan because it",
+        "options": [
+          "had visited similar open offices in several other countries",
+          "trusted the results of a single small trial",
+          "wanted to reduce the rent it was paying",
+          "had been persuaded by its own junior staff"
+        ],
+        "answer": 1,
+        "why": "首段写董事会被一次试点研究的数据打动，一周内就批准。A、C、D 均无依据；D 更与“数据由初级顾问编造”正好相反。"
+      },
+      {
+        "q": "The earliest complaints from staff concerned",
+        "options": [
+          "the level of background noise from nearby desks",
+          "the loss of a personal desk and space",
+          "the constant feeling of being watched by others",
+          "the length of the journey into the office"
+        ],
+        "answer": 2,
+        "why": "第二段开头明说抱怨起初不是关于噪音，而是被人盯着看。A 是原文点明排除的；B、D 属常识联想，文中没有依据。"
+      },
+      {
+        "q": "The pilot figures were found to have been",
+        "options": [
+          "collected over a period that was too short",
+          "kept from the board until after the vote",
+          "drawn from a sample of only five employees",
+          "invented by junior members of the consulting team"
+        ],
+        "answer": 3,
+        "why": "原文说数字由一名初级顾问编造，与 D 直接对应。C 把“初级顾问”偷换成“只有五名员工”，A、B 都是文中没有的推断。"
+      },
+      {
+        "q": "The word \"overthrown\" suggests that the policy was",
+        "options": [
+          "reversed by a formal vote of the board",
+          "dropped without any discussion at all among the directors",
+          "replaced by a cheaper and much simpler office design",
+          "criticised in the press before the final vote"
+        ],
+        "answer": 0,
+        "why": "overthrown 紧跟一次会议和五名董事中三人投反对票，说明是正式表决推翻。B 说未经讨论，与原文表决直接冲突。"
+      },
+      {
+        "q": "The phrase \"the poverty of evidence\" implies that the original design",
+        "options": [
+          "was based on very little real proof at the time",
+          "cost the firm far more than it had expected",
+          "ignored the daily needs of the lowest-paid employees",
+          "was reviewed by people with no training in design"
+        ],
+        "answer": 1,
+        "why": "poverty of evidence 意为证据贫乏，指最初的设计没有多少依据支撑。C 借 poverty 的字面义“贫穷”误导，把证据不足偷换成低薪员工的处境。"
+      }
+    ]
+  }
+}

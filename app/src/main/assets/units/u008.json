@@ -1,0 +1,99 @@
+{
+  "unit": 8,
+  "words": [
+    {
+      "no": 71,
+      "word": "mourn",
+      "phonetic": "mɔːn",
+      "zh": "v. 哀悼；（对…）感到痛心（或遗憾）",
+      "guess": "The whole village stood in the rain as the old teacher was buried. Nobody said much; they had come to mourn a man who had taught three generations. Even his former students, grey-haired now, wept.",
+      "guessQ": "Why do you think so many people came to mourn him?",
+      "meaningEn": "To mourn someone is to feel and show deep sadness because they have died. The villagers in the story mourn a teacher they loved, and standing together in the rain is how they show it.",
+      "context": "Nations mourn their dead in different ways, but the impulse is universal: a public ceremony marks a loss too large for any single family to carry. Critics say official mourning can be staged, yet even staged grief gives private sorrow a place to stand.",
+      "idx": 1
+    },
+    {
+      "no": 72,
+      "word": "limp",
+      "phonetic": "limp",
+      "zh": "n. 跛行 vi. 一瘸一拐地走，蹒跚 adj. 软弱的，无生气的，无精神的；软的，松沓的",
+      "guess": "After the fall, he tried to walk back to the car but had to limp the whole way. His ankle had swollen to twice its size, and every step hurt.",
+      "guessQ": "Have you ever had to limp home after an injury?",
+      "meaningEn": "To limp is to walk unevenly because one leg or foot is hurt. In the story the swollen ankle forces him to limp, putting his weight on the good leg and dragging the other.",
+      "context": "The horse finished the race with a slight limp, and the vet ordered three weeks of rest. Trainers know that an untreated limp rarely stays minor: favouring one leg overloads the other, and the second injury is often the one that ends a career.",
+      "idx": 2
+    },
+    {
+      "no": 73,
+      "word": "squad",
+      "phonetic": "skwɔd",
+      "zh": "n. （军队的）班，小队，小组",
+      "guess": "A squad of six cleaners reached the stadium at dawn. By noon the stands were spotless, and the same six people were already on their way to the next venue.",
+      "guessQ": "What could a squad of six get done in a single morning?",
+      "meaningEn": "A squad is a small group of people who work or train together, especially in the police or the army. The cleaners in the story form a squad: six people sent as one unit to finish a single job.",
+      "context": "Modern policing relies less on the lone officer than on the squad: four to six people who share information, cover each other and are sent out as a unit. Critics worry that loyalty inside a squad can silence the one member willing to report misconduct.",
+      "idx": 3
+    }
+  ],
+  "reading": {
+    "title": "The Memorial Match",
+    "text": "For eleven seasons the squad had barely changed. The same eleven men, most of them past thirty, turned up on the same pitch every Saturday, and the same goalkeeper, Marek, shouted the same instructions from the same goal line. New players rarely lasted a month.\n\nWhen Marek died in February, nobody knew what to say to anybody else. The club did not withdraw from the league. It limped through the remaining fixtures, losing by a single goal again and again, and the changing room stayed silent long after the final whistle. The coach stopped giving team talks, because every sentence he began sounded like a summary of a season already lost.\n\nIn May the club held a memorial match. Players came back from other towns, some with children who had never seen them play. There was no trophy and no sponsor, only a gate left open for anyone who wanted to walk in. They had come to mourn a friend, and to remind themselves that a squad is not a list of names but a habit of showing up for one another.",
+    "questions": [
+      {
+        "q": "The remark that new players rarely lasted a month implies that",
+        "options": [
+          "the club preferred to recruit from neighbouring towns",
+          "the established players left little room for newcomers",
+          "the league imposed strict limits on the size of squads",
+          "young players were unwilling to train on Saturday mornings"
+        ],
+        "answer": 1,
+        "why": "原文说十一个赛季几乎没变、同十一人每周出现，新人 rarely lasted a month，说明固定班底让外来者难以立足。A 谈招募范围、C 谈联赛限额、D 谈年轻人意愿，原文均无依据。"
+      },
+      {
+        "q": "After Marek's death, the club",
+        "options": [
+          "withdrew from the league until the season had ended",
+          "held a memorial match before the very next fixture",
+          "replaced him with a younger goalkeeper almost immediately",
+          "kept playing, and losing, without saying much at all"
+        ],
+        "answer": 3,
+        "why": "原文说 The club did not withdraw… It limped through the remaining fixtures，后半句写更衣室在终场哨响后久久无人说话。A 说退出联赛直到赛季结束，与 did not withdraw 正好相反，是最强的反向干扰。"
+      },
+      {
+        "q": "The word \"limped\" in the second paragraph suggests that the team",
+        "options": [
+          "moved forward painfully, with neither energy nor purpose",
+          "was carrying several players who were physically injured",
+          "walked off the pitch in protest at a referee's decision",
+          "slowed the game down deliberately to protect its lead"
+        ],
+        "answer": 0,
+        "why": "limp 本义是一瘸一拐地走，此处接 losing by a single goal again and again，写球队艰难撑完赛季。B 把它坐实成球员受伤，是字面误读；C、D 与原文情节无关。"
+      },
+      {
+        "q": "The memorial match was held mainly in order to",
+        "options": [
+          "raise money for the club's running costs the next season",
+          "give former players a chance to meet each other again",
+          "honour a friend and restate what held the group together",
+          "attract a sponsor who had supported the club for years"
+        ],
+        "answer": 2,
+        "why": "原文强调没有奖杯也没有赞助，他们来 mourn a friend，并提醒自己 a squad is not a list of names。A 谈筹钱、D 谈拉赞助，都被 no trophy and no sponsor 一句直接否掉，属于无中生有。"
+      },
+      {
+        "q": "The final sentence implies that a squad is best understood as",
+        "options": [
+          "a formal group defined by its official list of members",
+          "a group held together by small, repeated acts of care",
+          "a set of players selected for their individual skill",
+          "an organisation that depends on one strong coach"
+        ],
+        "answer": 1,
+        "why": "末句把球队说成 a habit of showing up for one another，即彼此到场、反复守护的习惯。A 的 official list of members 正是原文否定的 a list of names，属偷换概念，也是本题最强干扰。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "unit": 9,
+  "words": [
+    {
+      "no": 1,
+      "word": "insect",
+      "phonetic": "ˈinsekt",
+      "zh": "n. 昆虫，虫",
+      "guess": "In July the kitchen filled with insects every evening. They came through the open window, settled on the fruit, and rose again the moment anyone moved.",
+      "guessQ": "Why would so many insects appear in one kitchen?",
+      "meaningEn": "An insect is a small creature with six legs and a body in three parts, such as a fly, an ant or a beetle. The flies in the story are insects: small enough to come through a window, numerous enough to fill a room.",
+      "context": "Insect populations have fallen by more than half in some European reserves, a decline that quietly undermines everything above them: birds, bats and the plants that depend on pollination. Because insects are small and seasonal, the loss was easy to ignore until the birds stopped arriving.",
+      "idx": 1
+    },
+    {
+      "no": 2,
+      "word": "proficiency",
+      "phonetic": "prəˈfiʃənsi",
+      "zh": "n. 熟练，精通",
+      "guess": "After two years in Toronto, his English proficiency was good enough for work but not for jokes. Meetings were fine; the pub was exhausting.",
+      "guessQ": "How is proficiency different from confidence in a second language?",
+      "meaningEn": "Proficiency is a high level of skill in something, usually built up through long practice. In the story his proficiency in English is real, yet it does not stretch to the speed and slang of a pub conversation.",
+      "context": "Employers routinely test language proficiency without asking what it is for: a score on a grammar exam says little about whether a nurse can calm a frightened patient. What matters in most jobs is not accuracy in the abstract but being understood under pressure.",
+      "idx": 2
+    },
+    {
+      "no": 3,
+      "word": "sentiment",
+      "phonetic": "ˈsentimənt",
+      "zh": "n. 意见，观点；感情，情绪",
+      "guess": "When the plan was announced, sentiment in the office turned against it within a week. The same people who had asked for the change now said it had been forced on them.",
+      "guessQ": "How quickly can sentiment in a workplace turn against a good idea?",
+      "meaningEn": "Sentiment is what people feel or think about something, especially when many of them feel it at once. In the story, office sentiment moves from support to resentment in a single week.",
+      "context": "Public sentiment turned against the project only after the costs were published. Until then, surveys had shown steady support; within a month, two thirds of respondents wanted it stopped. The lesson for planners is uncomfortable: enthusiasm often rests on details nobody has yet been told.",
+      "idx": 3
+    },
+    {
+      "no": 4,
+      "word": "gear",
+      "phonetic": "ɡiə",
+      "zh": "n. 齿轮，传动装置，（排）档；（从事某项活动所需的）用具，设备，衣服 vt. 使适应，使适合",
+      "guess": "We loaded the gear into the van the night before: ropes, helmets, three bags of food. In the morning it rained, and nobody wanted to go.",
+      "guessQ": "What would you pack if you had to carry all the gear yourself?",
+      "meaningEn": "Gear is the equipment you need for a particular activity, such as climbing, fishing or camping. In the story the gear is the ropes, helmets and food that fill the van before a trip.",
+      "context": "Climbing gear is inspected more closely than almost any other sporting equipment, and with good reason: a worn rope or a cracked clip fails without warning. Guides replace their kit on a fixed schedule rather than waiting for visible damage, which is why second-hand gear is treated with suspicion.",
+      "idx": 4
+    },
+    {
+      "no": 5,
+      "word": "literacy",
+      "phonetic": "ˈlitərəsi",
+      "zh": "n. 识字，有文化，读写能力",
+      "guess": "Her grandmother signed the contract with a thumbprint. Literacy had never been taught in that village, and at seventy she saw no reason to begin.",
+      "guessQ": "Why might literacy go untaught in a village for generations?",
+      "meaningEn": "Literacy is the ability to read and write. In the story the grandmother never acquired it, so a thumbprint is the only signature available to her.",
+      "context": "Adult literacy programmes are cheap to run and hard to measure. A learner who can now read a bus timetable may still fail a formal test, and funding usually follows test scores, so the classes serving the least prepared adults are the first to lose their grants.",
+      "idx": 5
+    },
+    {
+      "no": 6,
+      "word": "rectify",
+      "phonetic": "ˈrektifai",
+      "zh": "vt. 纠正，修复",
+      "guess": "The bank had charged him twice for the same transfer. It took four phone calls and two months to rectify, and nobody ever explained how it had happened.",
+      "guessQ": "Have you ever had to rectify a mistake that was not your own?",
+      "meaningEn": "To rectify something is to put right what has gone wrong. The bank in the story eventually rectifies the double charge, but only after months of phone calls and no explanation.",
+      "context": "The company rectified the fault within days, but the damage to its reputation lasted far longer. What customers remembered was not the error itself but the two weeks of silence that followed it; an apology issued early would have cost nothing at all.",
+      "idx": 6
+    },
+    {
+      "no": 7,
+      "word": "overhead",
+      "phonetic": "ˈəuvəˌhed",
+      "zh": "n. 经常费用，管理费用 adj. 在头顶上的，架空的 adv. 在头顶上",
+      "guess": "The bakery's rent, electricity and insurance came to more than the flour. Overhead, the owner said, was what killed small shops, not the price of bread.",
+      "guessQ": "What counts as overhead for a small bakery?",
+      "meaningEn": "Overhead is the regular cost of running a business, such as rent, heating, insurance and administration, rather than the cost of the goods sold. In the story the bakery's overhead is larger than its flour bill.",
+      "context": "Universities rarely close departments because of teaching costs; they close them because overhead — heating, maintenance, administration — keeps rising while student numbers fall. A small department can be academically healthy and still be judged unaffordable, since it carries a share of buildings it never chose.",
+      "idx": 7
+    },
+    {
+      "no": 8,
+      "word": "frequent",
+      "phonetic": "ˈfriːkwənt",
+      "zh": "adj. 时常发生的，常见的",
+      "guess": "Buses to the village are frequent in summer and almost nonexistent in winter. In January she once waited ninety minutes in the rain.",
+      "guessQ": "Are frequent buses a luxury in a small village?",
+      "meaningEn": "Frequent means happening often or at short intervals. In the story the buses are frequent in summer, which makes the winter timetable feel less like a service than an absence.",
+      "context": "Frequent small disruptions damage a supply chain more than one dramatic failure. A lorry that arrives a day late every month forces warehouses to hold extra stock, and that stock ties up capital; the occasional fire, by contrast, is insured and quickly forgotten.",
+      "idx": 8
+    },
+    {
+      "no": 9,
+      "word": "destiny",
+      "phonetic": "ˈdestini",
+      "zh": "n. 命运；定数，天命",
+      "guess": "His grandfather had planned his life: the school, the trade, the wife. He left at nineteen, mostly to prove that destiny was something a person could refuse.",
+      "guessQ": "Can a person really refuse the destiny a family has planned?",
+      "meaningEn": "Destiny is the course of events that seems fixed in advance, often by a power beyond human control. In the story the grandson treats destiny as a plan he is free to walk away from.",
+      "context": "The idea that a nation has a destiny has justified both liberation and conquest. Historians treat such claims as descriptions of what a country wanted, dressed up as predictions of what it was owed, which is why the word appears often in speeches and rarely in treaties.",
+      "idx": 9
+    },
+    {
+      "no": 10,
+      "word": "cellar",
+      "phonetic": "ˈselə",
+      "zh": "n. 地窑，地下室；酒窖",
+      "guess": "The house had a cellar nobody used, cold and smelling of earth. In August it was the coolest room in the building, and the children moved their beds down there.",
+      "guessQ": "What would you keep in a cellar like that one?",
+      "meaningEn": "A cellar is a room below ground level, usually under a house and often used for storage. In the story the cellar stands empty for most of the year and becomes a bedroom in the heat.",
+      "context": "The restaurant's cellar holds fewer than two hundred bottles, and the owner knows every one of them. He argues that a long wine list is a way of avoiding decisions: with two hundred labels a customer can be guided, while with two thousand they are simply abandoned.",
+      "idx": 10
+    }
+  ],
+  "reading": {
+    "title": "The Cellar School",
+    "text": "The classroom was a cellar under a hardware shop, and in June the insects came through the small window in clouds. Nobody complained. For the twenty adults who climbed down twice a week, it was the only place in the district where poor literacy could be admitted without shame.\n\nDara, a retired clerk, ran it on almost nothing. Overhead was close to zero, since the owner took no rent, but the gear still had to be bought: pens, paper, and a second-hand projector that failed whenever the room was damp. Dropouts were frequent in summer, when farm work began at four. Dara never scolded. She kept the door open and the register honest.\n\nLast spring the district offered its first proficiency exam. Eleven of her students sat it and nine passed, a result that changed the sentiment faster than any campaign. Parents who had kept their daughters at home began asking about enrolment. Dara refuses to call this destiny. \"Nothing was fated,\" she says. \"Someone had to rectify the forms, and someone had to keep the lights on for eleven years.\"",
+    "questions": [
+      {
+        "q": "The cellar classroom is presented as valuable mainly because",
+        "options": [
+          "it charged no fees and asked for no documents",
+          "its students could admit a weakness without shame",
+          "it was warmer and quieter than the local school",
+          "the shop owner taught there in the evenings"
+        ],
+        "answer": 1,
+        "why": "原文说这是全区唯一能 admit to poor literacy without shame 的地方，价值在于不必羞耻。A 把“房东不收租”扩大成“对学生免费”，C 的温暖安静原文反而说潮湿漏雨。"
+      },
+      {
+        "q": "Dara's response to students who dropped out in summer was to",
+        "options": [
+          "leave the door open and expect them back",
+          "warn them that they would lose their places",
+          "visit their farms and persuade them to return",
+          "move the classes to an earlier hour each day"
+        ],
+        "answer": 0,
+        "why": "原文 Dara never scolded. She kept the door open and the register honest，意思是不责备、留门等人回来。B 说警告他们失去名额，C 说上门劝回，都假定她在施压，与这种不催促的态度相反。"
+      },
+      {
+        "q": "The exam results changed feeling in the village because",
+        "options": [
+          "the district began funding the school soon afterwards",
+          "the students complained publicly about the way they were treated",
+          "Dara was offered a post in the district office",
+          "parents saw evidence that the teaching produced results"
+        ],
+        "answer": 3,
+        "why": "原文说十一人应考九人通过，随后原本把女儿留在家里的家长开始询问报名，转变来自看得见的成绩。A 拨款、C 她去区里任职，原文完全没有提到。"
+      },
+      {
+        "q": "Dara refuses to describe the outcome as destiny because",
+        "options": [
+          "she does not believe that any life is planned in advance",
+          "she credits it to years of deliberate, unglamorous work",
+          "the district, not she, deserves credit for the exam",
+          "her students had little interest in the word itself"
+        ],
+        "answer": 1,
+        "why": "她引用 Nothing was fated，并说有人得 rectify the forms、有人得让灯亮十一年，落点是长期具体的付出。A 把话读成抽象的反宿命论，偏离了原句。"
+      },
+      {
+        "q": "Which statement best captures what the passage says about the school?",
+        "options": [
+          "Cheap premises matter more than the quality of teaching",
+          "Success depends on never losing a single student",
+          "Patience and persistence count for more than inspiration",
+          "Official examinations are the best measure of progress"
+        ],
+        "answer": 2,
+        "why": "全文写零房租、夏季流失、守夜灯十一年，落点是耐心与坚持。D 把一次考试当成最好的衡量，原文只把它当作一次机会；A、B 也都被细节否掉。"
+      }
+    ]
+  }
+}

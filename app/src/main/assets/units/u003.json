@@ -1,0 +1,179 @@
+{
+  "unit": 3,
+  "list": 1,
+  "group": 3,
+  "title": "Unit 3",
+  "words": [
+    {
+      "no": 21,
+      "word": "asset",
+      "phonetic": "ˈæset",
+      "zh": "n. 资产，财产；有价值的特性或技能，优点",
+      "guess": "When the factory closed, the town lost its biggest employer. Its real asset, people said, was not the buildings but the workers who knew how to repair the machines.",
+      "guessQ": "What was the town's real asset, according to the people there?",
+      "meaningEn": "An asset is something valuable that a person or an organisation owns, such as money, property or a useful skill. The town's asset was the skill of its workers, not its empty buildings.",
+      "context": "Governments increasingly treat data as a strategic asset, comparable to a port or a power station. Yet the analogy has limits: a port can be guarded, whereas data copied across a border in seconds cannot be recovered by any customs officer.",
+      "idx": 1
+    },
+    {
+      "no": 22,
+      "word": "decent",
+      "phonetic": "ˈdiːsənt",
+      "zh": "adj. 像样的，过得去的，体面的；宽厚的，大方的；正派的；合乎礼仪的，得体的",
+      "guess": "The room was cheap, but it was clean and the bed was comfortable. For that price, it was a decent place to sleep.",
+      "guessQ": "What made the room a decent choice?",
+      "meaningEn": "Something decent is of an acceptable standard: not excellent, but good enough. A decent room is clean and comfortable, and a decent wage is one a person can actually live on.",
+      "context": "Campaigners argue that a decent minimum wage is cheaper than the subsidies low pay makes necessary. Firms that pay too little do not disappear; their staff simply claim housing benefit, and the public pays the difference quietly through the tax system.",
+      "idx": 2
+    },
+    {
+      "no": 23,
+      "word": "recipe",
+      "phonetic": "ˈresipi",
+      "zh": "n. 烹饪法，食谱；方法，秘诀，诀窍",
+      "guess": "My grandmother never wrote her recipes down. She kept them in her head, and when she died, nobody could make her soup again.",
+      "guessQ": "Why could nobody repeat the grandmother's recipe?",
+      "meaningEn": "A recipe is a set of instructions for cooking a dish. The word also describes any set of steps that reliably produces a result, as in a recipe for growth.",
+      "context": "There is no single recipe for reducing road deaths, but the countries that have succeeded share two ingredients: lower speed limits in towns, and enforcement that does not depend on the mood of the driver. Both are unpopular before they arrive.",
+      "idx": 3
+    },
+    {
+      "no": 24,
+      "word": "premier",
+      "phonetic": "ˈpremiə",
+      "zh": "n. 总理，首相 adj. 首要的，首位的；首次的",
+      "guess": "The hotel is the premier place to stay in the city. Every visiting team books it, and the restaurant is full every night.",
+      "guessQ": "What makes the hotel the premier choice in the city?",
+      "meaningEn": "Premier means first in importance or quality. A premier hotel is the one others are measured against; as a noun, the word also means a country's or province's head of government.",
+      "context": "The university has become the province's premier research centre, a status built on two decades of steady public funding. Whether it survives the next budget round depends less on its reputation than on whether the government chooses to defend it in public.",
+      "idx": 4
+    },
+    {
+      "no": 25,
+      "word": "casual",
+      "phonetic": "ˈkæʒuəl",
+      "zh": "adj. 偶然的；非正式的；临时的，不定期的；漠不关心的，冷淡的",
+      "guess": "He wore a suit to the interview, but the manager was in jeans. It was a casual office: nobody minded what you wore, as long as the work was done.",
+      "guessQ": "What made the office a casual place to work?",
+      "meaningEn": "Casual describes something relaxed and informal, without ceremony. It also describes work that is temporary or irregular, done without a permanent contract.",
+      "context": "Nearly a fifth of the workforce is now employed on casual contracts, paid by the hour and given no notice of next week's shifts. The arrangement suits students and parents; it suits employers rather better, since demand can fall overnight.",
+      "idx": 5
+    },
+    {
+      "no": 26,
+      "word": "severe",
+      "phonetic": "siˈviə",
+      "zh": "adj. 严重的；严厉的，严格的；严峻的，艰难的；朴素的，不加装饰的",
+      "guess": "That winter the weather was severe. Roads closed for a week, and part of the school roof came down under the snow.",
+      "guessQ": "How severe was the winter that year?",
+      "meaningEn": "Severe means very bad or very strict. Severe weather is dangerous, a severe punishment is harsh, and a severe shortage is one that causes real hardship.",
+      "context": "Hospitals in the region face severe staff shortages, and the problem is worst in winter, when admissions double. Managers have responded by closing beds rather than wards, a decision that looks like efficiency and feels like retreat to the nurses left behind.",
+      "idx": 6
+    },
+    {
+      "no": 27,
+      "word": "propel",
+      "phonetic": "prəˈpel",
+      "zh": "vt. 推进，推动；激励，驱使",
+      "guess": "The little boat had no engine. Two men rowed all night, and the current propelled them towards the far shore.",
+      "guessQ": "What propelled the boat towards the far shore?",
+      "meaningEn": "To propel something is to push it forward. The word is also used of forces that drive change: cheap credit propelled the boom, and fear of missing out propelled the crowd.",
+      "context": "Cheap credit propelled the construction boom of the past decade, and the same cheap credit is now propelling the correction. Cities that borrowed against future tax revenue are cutting services first, before the residents who voted for those services notice.",
+      "idx": 7
+    },
+    {
+      "no": 28,
+      "word": "authorize",
+      "phonetic": "ˈɔːθəraiz",
+      "zh": "vt. 授权，批准",
+      "guess": "The nurse was not allowed to give the extra medicine on her own. She phoned the doctor, who authorized it within a minute.",
+      "guessQ": "Who had to authorize the extra medicine?",
+      "meaningEn": "To authorize something is to give official permission for it. The doctor authorized the medicine, which meant the nurse could give it without fear of blame.",
+      "context": "Only the finance ministry can authorize spending above the agreed ceiling, a rule introduced after a series of overruns. The effect has been slower decisions rather than smaller bills: departments now submit larger requests, and expect them to be cut.",
+      "idx": 8
+    },
+    {
+      "no": 29,
+      "word": "instruct",
+      "phonetic": "inˈstrʌkt",
+      "zh": "vt. 指示，通知；教育",
+      "guess": "The teacher instructed the class to leave their phones in a box by the door. Nobody complained; the rule had been there since September.",
+      "guessQ": "What did the teacher instruct the class to do?",
+      "meaningEn": "To instruct people is to tell them officially what to do, often with details about how. It can also mean to teach: a coach instructs players, and a professor instructs students.",
+      "context": "Staff were instructed to log every complaint within twenty-four hours, a rule that produced a rush of entries at the end of each day. The logs are now quoted in parliament as proof that the service listens, and by unions as proof that it does not.",
+      "idx": 9
+    },
+    {
+      "no": 30,
+      "word": "lure",
+      "phonetic": "ljuə",
+      "zh": "n. 吸引力，诱惑物；诱饵，鱼饵 vt. 吸引，引诱，诱惑",
+      "guess": "The shop put a big red sign in the window: everything must go. It was only a trick to lure people inside, and it worked.",
+      "guessQ": "How did the sign lure people into the shop?",
+      "meaningEn": "To lure someone is to attract them, often by offering something that looks better than it really is. A lure is also the bait used in fishing, whether real or metaphorical.",
+      "context": "Tax breaks designed to lure foreign manufacturers rarely survive their first review. Plants open, grants are paid, and the company moves again when a poorer region offers more, leaving behind the training costs, an empty industrial park and a workforce that cannot follow.",
+      "idx": 10
+    }
+  ],
+  "reading": {
+    "title": "Delivering the City",
+    "text": "When the delivery app reached the city, it lured riders with promises of easy money and no boss. Students signed up for casual shifts between lectures, and the platform quickly became the premier employer for anyone who wanted work without a contract. Investors described it as a national asset; the riders described it as a way to pay rent.\n\nThe recipe was simple: pay per delivery, charge restaurants a commission, and own no vehicles. Riders were instructed to accept a job within thirty seconds, and regional managers were authorized to suspend anyone who refused three in a row. In decent weather the system worked smoothly; in severe cold it produced injuries that nobody had budgeted for.\n\nOfficials now say the model propelled growth by moving risk onto the people who ride. A report published this spring recommends that every rider be offered a contract after six months, and that platforms show how pay is calculated. The company has not commented. Its bikes, meanwhile, are still on every corner.",
+    "questions": [
+      {
+        "q": "The app attracted its first riders by",
+        "options": [
+          "offering them a share of the company's future profits",
+          "promising quick earnings and freedom from a supervisor",
+          "guaranteeing them a permanent contract after their training ends",
+          "paying for their bicycles and their accident insurance"
+        ],
+        "answer": 1,
+        "why": "首段 promises of easy money and no boss，即来钱快、没人管；C 与 without a contract 相反。"
+      },
+      {
+        "q": "The rules in the second paragraph suggest that the company",
+        "options": [
+          "trusted its local managers to use their own judgement",
+          "wanted riders to work longer shifts than students could",
+          "controlled riders through its systems rather than through contracts",
+          "was unable to monitor how quickly jobs were accepted"
+        ],
+        "answer": 2,
+        "why": "三十秒接单、连拒三单即停用，都是系统规则而非合同条款；A 与被动服从的措辞相反。"
+      },
+      {
+        "q": "The phrase \"nobody had budgeted for\" implies that",
+        "options": [
+          "the company had underestimated the cost of accidents",
+          "riders were expected to buy all their own equipment",
+          "the city had refused to fund road safety measures",
+          "insurance was too expensive for most riders to afford"
+        ],
+        "answer": 0,
+        "why": "in severe cold it produced injuries that nobody had budgeted for，即伤害发生却无人计入成本；D 偷换为保险太贵。"
+      },
+      {
+        "q": "The report recommends that platforms",
+        "options": [
+          "stop using self-employed riders in the centre of cities",
+          "offer contracts and explain how pay is set",
+          "pay a fixed hourly rate set by the government",
+          "limit the number of hours riders may work each week"
+        ],
+        "answer": 1,
+        "why": "报告要求满六个月给合同，并公开薪酬算法，两句合起来即 B；C 的政府定价原文未提。"
+      },
+      {
+        "q": "The final sentence suggests that",
+        "options": [
+          "the company has quietly accepted the report's main findings",
+          "the service has already been withdrawn from the city",
+          "riders have won most of the demands they made",
+          "the dispute has changed very little on the ground"
+        ],
+        "answer": 3,
+        "why": "has not commented 与 still on every corner 并列，说明争论照旧、街景未变；B 与之相反。"
+      }
+    ]
+  }
+}

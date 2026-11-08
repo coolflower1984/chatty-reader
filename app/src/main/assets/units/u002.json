@@ -1,0 +1,179 @@
+{
+  "unit": 2,
+  "list": 1,
+  "group": 2,
+  "title": "Unit 2",
+  "words": [
+    {
+      "no": 11,
+      "word": "harmony",
+      "phonetic": "ˈhɑːməni",
+      "zh": "n. 调合，协调，和谐",
+      "guess": "The new neighbours played loud music every night for a month. Then they invited the whole street to dinner. Now the building lives in harmony.",
+      "guessQ": "How did one dinner bring harmony to the building?",
+      "meaningEn": "Harmony is a state in which people live or work together without fighting. In the story, one shared meal turned a street of complaints into something closer to harmony.",
+      "context": "Trade agreements are often defended in the name of harmony, yet the record is mixed: tariffs fall, but so do the protections that kept small producers alive. Durable harmony, economists now concede, depends less on signed texts than on whether the gains are shared.",
+      "idx": 1
+    },
+    {
+      "no": 12,
+      "word": "arrogant",
+      "phonetic": "ˈærəɡənt",
+      "zh": "adj. 傲慢的，自大的",
+      "guess": "The new manager never said hello to the cleaners. He was sure his ideas were better than anyone else's, and he said so in every meeting. People called him arrogant behind his back.",
+      "guessQ": "Why did the staff call the new manager arrogant?",
+      "meaningEn": "Someone who is arrogant believes they are better or more important than other people, and shows it. The manager in the story was arrogant because he treated his team as though they had nothing to teach him.",
+      "context": "Diplomats later described the delegate's tone as arrogant, and the impression shaped everything that followed. Small states that had arrived ready to compromise hardened their positions, and a draft that might have passed in a week took eight months to settle.",
+      "idx": 2
+    },
+    {
+      "no": 13,
+      "word": "afford",
+      "phonetic": "əˈfɔːd",
+      "zh": "vt. 担负得起；提供",
+      "guess": "Anna wanted to study in another country, but her family could not afford the plane ticket. She worked in a cafe for a year, saved every tip, and finally bought it herself.",
+      "guessQ": "What did Anna do because her family could not afford the trip?",
+      "meaningEn": "To afford something is to have enough money to pay for it. Anna's family could not afford the ticket, so she earned the money herself, one tip at a time.",
+      "context": "Subsidised housing for nurses and teachers is usually defended on the ground that key workers can no longer afford to live near their jobs. In practice such schemes often help landlords more than tenants, because rents rise to absorb whatever support is offered.",
+      "idx": 3
+    },
+    {
+      "no": 14,
+      "word": "argue",
+      "phonetic": "ˈɑːɡjuː",
+      "zh": "vi. 争论，争辩，辩论 vt. （坚决）主张；说服",
+      "guess": "My brother and I argue about the television almost every evening. Last night we spent an hour choosing a film, and in the end we watched nothing at all.",
+      "guessQ": "What usually happens when the brothers argue?",
+      "meaningEn": "To argue is to speak angrily with someone because you disagree about something. The word also means to give reasons for an opinion, as when a researcher argues that a policy has failed.",
+      "context": "Critics argue that the levy will push small firms abroad, though the evidence from comparable schemes is thin. What matters politically is that the claim sounds plausible; once a slogan of that kind takes hold, correction comes too late to affect the vote.",
+      "idx": 4
+    },
+    {
+      "no": 15,
+      "word": "paradise",
+      "phonetic": "ˈpærədais",
+      "zh": "n. 天堂，乐园",
+      "guess": "For children from the city, the summer camp was paradise. There was a lake to swim in, a forest to explore, and not a single car. Several of them cried on the last day.",
+      "guessQ": "Why did the camp feel like paradise to the children?",
+      "meaningEn": "A paradise is a place or situation that seems perfect, with nothing to fear and nothing missing. The camp felt like paradise because it gave the children everything they loved and nothing they dreaded.",
+      "context": "Brochures still sell the island as an unspoiled paradise, a description local fishermen find hard to recognise. Hotels have taken the best beaches, and the bay they advertise is increasingly closed for swimming after heavy rain, when untreated waste washes down from the hills.",
+      "idx": 5
+    },
+    {
+      "no": 16,
+      "word": "plea",
+      "phonetic": "pliː",
+      "zh": "n. 恳求，请求；抗辩，答辩，辩护；借口，托辞",
+      "guess": "The old man stood outside the station every morning with a cardboard sign. His plea was simple: please help me find my daughter. Most people walked past.",
+      "guessQ": "What did the old man's plea ask strangers to do?",
+      "meaningEn": "A plea is an urgent request for something, usually made by someone with little power to insist. In a courtroom the same word names the answer a defendant gives to a charge.",
+      "context": "The mayor's plea for calm came hours after the verdict, when crowds had already filled the square. It was broadcast on every channel and changed nothing: by nightfall the shops along the main street had closed their shutters, and most stayed closed for three days.",
+      "idx": 6
+    },
+    {
+      "no": 17,
+      "word": "merely",
+      "phonetic": "ˈmiəli",
+      "zh": "adv. 仅仅，只不过",
+      "guess": "I thought my sister was angry with me. In fact she was merely tired: the baby had kept her awake all night, and she could hardly finish a sentence.",
+      "guessQ": "What does merely tell us about the sister's mood?",
+      "meaningEn": "Merely means only, and nothing more. Saying that she was merely tired rules out the stronger explanation: she was not angry with you at all.",
+      "context": "The report concludes that the shortage is merely a problem of distribution, not of supply. The distinction sounds academic, but it settles the policy: if goods are in the wrong place rather than in short supply, building more factories will not help.",
+      "idx": 7
+    },
+    {
+      "no": 18,
+      "word": "flat",
+      "phonetic": "flæt",
+      "zh": "n. 一套房间，单元住宅 adj. 平的；（价格）固定的；漏气的；单调的，沉闷的；浅的 adv. 平直地，直截了当地",
+      "guess": "Ben lives in a small flat on the fourth floor. There is one room, a tiny kitchen, and a window that looks onto a car park.",
+      "guessQ": "How would you describe the place where Ben lives?",
+      "meaningEn": "A flat is a set of rooms to live in, usually on one floor of a larger building; in American English it is an apartment. The word can also describe a surface that is level, with no slopes or bumps.",
+      "context": "Graduates arriving in the capital increasingly rent a flat rather than a single room, even when the rent swallows half their salary. Employers cite housing costs when they explain why recruits leave within two years, taking skills that were expensive to train.",
+      "idx": 8
+    },
+    {
+      "no": 19,
+      "word": "ponder",
+      "phonetic": "ˈpɔndə",
+      "zh": "v. 思索，考虑，沉思",
+      "guess": "Mr Lee sat by the window with his tea and pondered the offer for a long time. Should he retire this year, or work one more winter?",
+      "guessQ": "What was Mr Lee pondering by the window?",
+      "meaningEn": "To ponder something is to think about it slowly and at length, turning it over before deciding. Mr Lee was pondering a choice that would shape the rest of his life.",
+      "context": "For months the committee pondered whether to publish the raw data alongside its conclusions. Openness favoured release; the risk of misreading weighed against it. In the end the data appeared, with a technical note that few outside the field would ever read.",
+      "idx": 9
+    },
+    {
+      "no": 20,
+      "word": "ignite",
+      "phonetic": "iɡˈnait",
+      "zh": "vt. 点燃；引发 vi. 着火",
+      "guess": "A spark from the barbecue jumped onto the dry grass. Within seconds the corner of the garden was burning. It took one small flame to ignite it.",
+      "guessQ": "How did a single spark ignite the garden?",
+      "meaningEn": "To ignite something is to make it start burning. The word travels easily into politics: a photograph or a speech can ignite anger, debate or reform.",
+      "context": "A photograph of the flooded school ignited public anger, and within a week the ministry had ordered an inquiry. Officials then admitted that complaints had been filed for two years without reply, and that the file had twice been closed.",
+      "idx": 10
+    }
+  ],
+  "reading": {
+    "title": "The Garden on King Street",
+    "text": "For eleven years the garden behind King Street was a small paradise for the families in the flats above the shops. Old men grew beans, children played between the tomato plants, and nobody ever locked the gate. When a developer bought the land, the residents could not afford a lawyer, so they sent a plea to the council instead, signed by two hundred people.\n\nThe developer was arrogant in every meeting. He argued that the site was merely a car park with weeds, and that forty new homes would bring harmony to a street that had none. He did not ponder the council's suggestion that he keep a corner for the garden; he rejected it before the coffee arrived.\n\nThen a photograph of the children standing among the beans ignited something in the city. Within a month the council had voted to buy the land, and the meeting that followed was short, quiet and slightly embarrassed. Nobody called it a victory. The garden, they said, had simply been worth more than the money.",
+    "questions": [
+      {
+        "q": "The residents wrote to the council because",
+        "options": [
+          "they had no money to take the developer to court",
+          "the garden had been officially protected for many years",
+          "they wanted the council to buy the land cheaply",
+          "the developer had broken several local planning rules"
+        ],
+        "answer": 0,
+        "why": "原文 could not afford a lawyer, so they sent a plea，说明没钱打官司才求助议会；D 的违规说法纯属无中生有。"
+      },
+      {
+        "q": "The developer's description of the site as \"merely a car park with weeds\" was intended to",
+        "options": [
+          "admit that the land had been badly looked after",
+          "make the garden appear to have no real value",
+          "persuade the council to reduce the asking price",
+          "show that he had studied the site very carefully"
+        ],
+        "answer": 1,
+        "why": "merely a car park with weeds 在贬低这块地，为建楼铺路；A 把贬低说成自省，属偷换概念。"
+      },
+      {
+        "q": "What was the effect of the photograph of the children?",
+        "options": [
+          "It ended the dispute within a single week",
+          "It persuaded the developer to change his plans",
+          "It forced the council to publish its records",
+          "It moved the council to act against the developer"
+        ],
+        "answer": 3,
+        "why": "ignited 后 within a month 议会才买地；A 把一个月压成一周，偷换时间，B、C 均无据。"
+      },
+      {
+        "q": "The last two sentences suggest that the residents",
+        "options": [
+          "regretted the price the council had agreed to pay",
+          "believed the garden had been undervalued all along",
+          "saw the outcome in practical terms rather than political ones",
+          "expected the developer to appeal against the decision"
+        ],
+        "answer": 2,
+        "why": "Nobody called it a victory 加 worth more than the money，说明他们视之为划算的交换；A 与原文相反。"
+      },
+      {
+        "q": "Which of the following best describes the developer's attitude at the meetings?",
+        "options": [
+          "He was willing to negotiate over the size of the block",
+          "He treated the residents' concerns as unworthy of attention",
+          "He doubted whether the land was suitable for housing",
+          "He wanted part of the garden kept for public use"
+        ],
+        "answer": 1,
+        "why": "arrogant 落在 before the coffee arrived 的当场否决，即不屑考虑；A 与否决矛盾，D 是他拒绝的建议。"
+      }
+    ]
+  }
+}

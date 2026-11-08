@@ -1,0 +1,177 @@
+{
+  "unit": 5,
+  "title": "Unit 5",
+  "words": [
+    {
+      "no": 41,
+      "word": "spoil",
+      "phonetic": "spɔil",
+      "zh": "n. 战利品，掠夺物 vt. 损坏，糟蹋；宠坏，溺爱 vi. （食物）变质",
+      "guess": "We planned a picnic for Sunday. Then it rained all morning and spoiled the whole day. Nobody wanted to go out after that.",
+      "guessQ": "What spoiled the day for them?",
+      "meaningEn": "If you spoil something, you damage it so that it can no longer be enjoyed or used properly. In the story the rain spoiled the picnic: the food was fine, but the day was gone.",
+      "context": "Economists warn that a badly designed subsidy can spoil the market it was meant to help: once farmers expect the payment, they plant for the subsidy rather than for demand, and surpluses pile up. The scheme was dropped after two years, having spoiled the incentives it was meant to protect.",
+      "idx": 1
+    },
+    {
+      "no": 42,
+      "word": "represent",
+      "phonetic": "ˌrepriˈzent",
+      "zh": "vt. 作为…的代表（或代理）；表示，象征；描绘，表现",
+      "guess": "Maya was chosen to represent her class at the school meeting. She had to speak for thirty students, so she wrote down their complaints before she went.",
+      "guessQ": "What did it mean for Maya to represent her class?",
+      "meaningEn": "To represent a group is to speak or act for its members, because they have asked you to. Maya represented her class: she carried thirty opinions into a room she entered alone.",
+      "context": "Delegates at the summit were chosen to represent national interests, yet most arrived with mandates so narrow that compromise was impossible. Observers noted that the assembly spoke for governments rather than citizens, and that the distance between the two had widened since the 1990s.",
+      "idx": 2
+    },
+    {
+      "no": 43,
+      "word": "sponge",
+      "phonetic": "spʌnʤ",
+      "zh": "n. 海绵 vt. 用湿海绵（或布）擦，揩",
+      "guess": "After the party, the table was covered in juice. Ben took a sponge from the kitchen, wet it, and wiped everything clean in a few minutes.",
+      "guessQ": "What would you reach for if you had to sponge a sticky table?",
+      "meaningEn": "A sponge is a soft, light object full of tiny holes that soaks up water and is used for cleaning. To sponge something is to wipe it with a sponge or a wet cloth. Ben sponged the table until the juice was gone.",
+      "context": "During the boom the capital acted as a sponge for surplus labour from the countryside: workers arrived faster than housing could be built, and rents rose accordingly. When growth slowed, the flow reversed within a single season, and thousands returned to villages they had left a decade earlier.",
+      "idx": 3
+    },
+    {
+      "no": 44,
+      "word": "hostile",
+      "phonetic": "ˈhɔstail",
+      "zh": "adj. 敌对的，不友善的",
+      "guess": "I asked the new neighbour if I could park in front of his gate. He said no in a hostile voice and closed the door before I could explain.",
+      "guessQ": "Why did the neighbour sound hostile?",
+      "meaningEn": "Hostile means unfriendly and ready to quarrel. A hostile crowd, a hostile question and a hostile takeover all share the same quality: they come at you with intent to harm. The neighbour was hostile — he refused to listen.",
+      "context": "The board called the takeover bid hostile, meaning it had been made directly to shareholders against the wishes of management. Shareholders resisted just as firmly, and the offer collapsed after eighteen months of legal dispute, leaving both sides with heavy costs.",
+      "idx": 4
+    },
+    {
+      "no": 45,
+      "word": "chord",
+      "phonetic": "kɔːd",
+      "zh": "n. 和弦，和音；弦，心弦",
+      "guess": "She sat down at the piano and played one chord. Everyone in the room looked up at once, because it sounded like the start of a song they knew.",
+      "guessQ": "What happened when she played the first chord?",
+      "meaningEn": "A chord is three or more musical notes played together and heard as a single sound. The word is also used for a feeling that two people share, as when a remark strikes a chord with you. One chord was enough to make the room look up.",
+      "context": "The minister's speech struck a chord with voters who felt the tax system had stopped being fair, and the phrase was repeated for weeks afterwards. Whether the policy itself was sound mattered less, analysts admitted, than the feeling it had produced.",
+      "idx": 5
+    },
+    {
+      "no": 46,
+      "word": "feeble",
+      "phonetic": "ˈfiːbl",
+      "zh": "adj. 虚弱的，衰弱的，无力的；无效的，无益的",
+      "guess": "He said he was late because the bus had broken down. It was a feeble excuse: the buses had not run that morning at all.",
+      "guessQ": "What makes his excuse feeble?",
+      "meaningEn": "Feeble means extremely weak, whether in the body, in an argument or in an attempt. A feeble excuse is one that convinces nobody. His excuse was feeble because the buses had not run that morning.",
+      "context": "Critics dismissed the government's response to the housing shortage as feeble: a tax on empty flats, they argued, would raise too little and arrive too late. The measures passed, but even their supporters called the package a first step rather than a solution.",
+      "idx": 6
+    },
+    {
+      "no": 47,
+      "word": "spontaneous",
+      "phonetic": "spɔnˈteiniəs",
+      "zh": "adj. 自发的，无意识的；自然的，天真率直的",
+      "guess": "Nobody planned the party. Someone mentioned that it was Anna's last day, and by six o'clock there was cake on the desk. It was completely spontaneous.",
+      "guessQ": "How did a spontaneous party start at the office?",
+      "meaningEn": "Something spontaneous happens without planning, because someone feels like doing it at that moment. The party was spontaneous: no invitations, no fixed date, just a cake that appeared at six.",
+      "context": "Field studies suggest that spontaneous cooperation, rather than formal rules, explains why some villages manage shared water supplies better than others. Where users meet often and informally, small violations are corrected on the spot before they harden into habits, and the rules themselves are rarely written down.",
+      "idx": 7
+    },
+    {
+      "no": 48,
+      "word": "spouse",
+      "phonetic": "spauz",
+      "zh": "n. 配偶",
+      "guess": "The form asks for your name, your date of birth, and the name of your spouse. If you are not married, you can leave that line empty.",
+      "guessQ": "Whose name goes on the line marked spouse?",
+      "meaningEn": "A spouse is the person you are married to, a husband or a wife. The form asked for the name of a spouse; anyone unmarried left the line empty.",
+      "context": "Tax systems that treat a married couple as one unit often discourage the lower-earning spouse from taking paid work, since the second income is taxed at the household's highest rate. Several countries have switched to individual assessment, and employment among women has risen.",
+      "idx": 8
+    },
+    {
+      "no": 49,
+      "word": "sparkle",
+      "phonetic": "ˈspɑːkl",
+      "zh": "n. 闪光，闪耀，闪烁；活力，生气 vi. 发光；活跃，（才智等）焕发",
+      "guess": "She wore a dark dress and a small silver necklace. Under the lights the necklace had a quiet sparkle, and people noticed it before they noticed her.",
+      "guessQ": "What gave the necklace its sparkle under the lights?",
+      "meaningEn": "A sparkle is a small, bright flash of light, or the liveliness in a person's eyes. The necklace had a quiet sparkle, the kind that comes from a surface catching the light.",
+      "context": "By the third week the campaign had lost its sparkle: the same phrases, the same promises, delivered in the same order. Advisers blamed the speechwriters, but the problem was the material — there was little new to say, and the audience knew it.",
+      "idx": 9
+    },
+    {
+      "no": 50,
+      "word": "receipt",
+      "phonetic": "riˈsiːt",
+      "zh": "n. 发票，收据 [pl.] 收入，进款；收到，接到",
+      "guess": "Keep the receipt when you buy the phone. Without it, the shop will not repair anything for free.",
+      "guessQ": "Why should you keep the receipt?",
+      "meaningEn": "A receipt is a printed or written note proving that you have paid for something. Shops ask for the receipt before they repair or replace goods, because it shows the purchase was theirs.",
+      "context": "Local authorities rarely audit small contracts, and receipts are often missing from the files; auditors found that in one case in five no proof of payment existed at all. The sums were modest individually, but together they exceeded the training budget.",
+      "idx": 10
+    }
+  ],
+  "reading": {
+    "title": "The Piano in the Square",
+    "text": "The piano appeared in the square on a Tuesday, with no notice and no explanation. A retired teacher had bought it for almost nothing and pushed it out of her garage. Passers-by stopped, and within an hour someone was playing. By evening a small crowd had gathered, and the applause was spontaneous rather than polite.\n\nNot everyone was pleased. The owner of the café opposite had been hostile from the start: the noise, he said, would spoil his customers' afternoons. He produced a receipt for soundproofing work that was never carried out. His argument sounded feeble to the council, which had to decide whether the piano could stay. Supporters replied that the instrument represented something the town had lost, a habit of being together for no particular reason.\n\nA compromise followed. A volunteer would sponge the keys every morning, and a tuner would test the strings by striking a single chord. The teacher's spouse, who had opposed the whole idea, was seen playing on Sundays. On winter evenings the varnish gave off a faint sparkle, and the square stayed busy long after the shops had closed.",
+    "questions": [
+      {
+        "q": "The applause is described as spontaneous rather than polite because",
+        "options": [
+          "the teacher had invited her friends to listen",
+          "the crowd had gathered by chance and reacted honestly",
+          "the council had organised a small opening event",
+          "the pianist was a well-known performer in town"
+        ],
+        "answer": 1,
+        "why": "首段写钢琴是老师自己从车库推出来的，无人通知也无人组织，路人自发停下，一小时内就有人弹。A、C 假设有人安排，与原文相反。"
+      },
+      {
+        "q": "The café owner's objection is weakened by the fact that",
+        "options": [
+          "he had never actually installed the soundproofing he paid for",
+          "he had complained about the piano only after winter",
+          "the council had not asked him for his opinion",
+          "his café stood at the other end of the town"
+        ],
+        "answer": 0,
+        "why": "第二段说他拿出一张隔音收据，可那项工程从没做过，抱怨自然站不住。B、D 无中生有；C 把“没征求他意见”当弱点，原文并无此意。"
+      },
+      {
+        "q": "What did the piano's supporters believe the instrument stood for?",
+        "options": [
+          "the hope that the council would buy more instruments",
+          "the expectation that tourists would visit the town",
+          "the belief that nearby property values would rise",
+          "the recovery of a habit of casual shared company"
+        ],
+        "answer": 3,
+        "why": "支持者说琴代表了小镇失去的东西，随即解释为“随时聚在一起的习惯”。A、B、C 把公共生活换成了乐器、游客和房价。"
+      },
+      {
+        "q": "The word \"sparkle\" in the last paragraph refers to",
+        "options": [
+          "the sound of the piano on cold winter evenings",
+          "the tuner's quiet satisfaction with the work he had done",
+          "light reflected from the piano's polished wooden surface",
+          "the brighter mood of the shopkeepers on the other side"
+        ],
+        "answer": 2,
+        "why": "末段写清漆在冬日灯下泛出微光，主语是琴身表面，说的是反光。A 把视觉写成听觉，B 张冠李戴，D 把物理的闪光误读成商户情绪。"
+      },
+      {
+        "q": "It can be inferred that the piano's survival depended mainly on",
+        "options": [
+          "the small daily efforts of people living nearby",
+          "the council's willingness to pay for regular repairs",
+          "the tuner's skill in keeping the strings in tune",
+          "the café owner's eventual change of heart about noise"
+        ],
+        "answer": 0,
+        "why": "第三段的维持靠志愿者每天擦琴、调音师偶尔验弦、配偶周日来弹，都是身边人的日常小事。C 最像，但验弦一次性的，撑不起长期。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "unit": 4,
+  "list": 1,
+  "group": 4,
+  "title": "Unit 4",
+  "words": [
+    {
+      "no": 31,
+      "word": "genuine",
+      "phonetic": "ˈʤenjuin",
+      "zh": "adj. 真的，真正的；真诚的",
+      "guess": "He said he was sorry, and this time it sounded genuine. He had brought flowers, and he did not look at his phone once.",
+      "guessQ": "How could you tell the apology was genuine?",
+      "meaningEn": "Something genuine is real, not copied or pretended. A genuine apology is one the person actually means, and a genuine leather bag is made of leather rather than plastic.",
+      "context": "Voters are unusually sensitive to whether an apology is genuine, and advisers who script one usually make matters worse. The wording matters less than the timing: a statement issued after the evidence appears reads as calculation, not regret, however carefully it is drafted.",
+      "idx": 1
+    },
+    {
+      "no": 32,
+      "word": "emergency",
+      "phonetic": "iˈməːʤənsi",
+      "zh": "n. 紧急情况，突然事件",
+      "guess": "The lights went out in the whole building. Someone shouted, and we felt our way down the stairs with our phones. It was not a drill this time; it was a real emergency.",
+      "guessQ": "How did the people in the building know it was an emergency?",
+      "meaningEn": "An emergency is a sudden dangerous situation that must be dealt with at once. A fire, a flood or a serious injury is an emergency; a power cut that lasts an hour usually is not.",
+      "context": "Hospitals plan for emergencies by keeping beds empty, which looks wasteful on any ordinary day. The calculation is deliberate: a system that runs at full capacity has no room for the one event it exists to absorb, and no staff left to absorb it.",
+      "idx": 2
+    },
+    {
+      "no": 33,
+      "word": "proceedings",
+      "phonetic": "prəˈsiːdiŋz",
+      "zh": "n. 进程，过程；议程；诉讼，诉讼程序；公报",
+      "guess": "The two companies could not agree about the broken machine. After a year of letters, they began legal proceedings, and the case went to court.",
+      "guessQ": "Why did the two companies begin legal proceedings?",
+      "meaningEn": "Proceedings are the formal steps of a legal case, or the official record of a meeting. Beginning proceedings means asking a court to settle a dispute that the two sides cannot settle themselves.",
+      "context": "Legal proceedings against the contractor began in 2019 and are still nowhere near a verdict. The delay has become part of the argument: the families say the process itself is the punishment, and the ministry declines to comment on a matter before the courts.",
+      "idx": 3
+    },
+    {
+      "no": 34,
+      "word": "consensus",
+      "phonetic": "kənˈsensəs",
+      "zh": "n. （意见等）一致，一致同意",
+      "guess": "Nobody loved the plan for the new car park, but nobody hated it either. After an hour of talk, the group reached a consensus: build it, but keep the trees.",
+      "guessQ": "What consensus did the group reach in the end?",
+      "meaningEn": "A consensus is general agreement within a group. It does not require everyone to be enthusiastic, only that nobody blocks the decision.",
+      "context": "There is now a broad scientific consensus that the reef is warming faster than models predicted in 2015. The remaining disagreement is political rather than empirical: what to do about it, and who should pay for the damage already done.",
+      "idx": 4
+    },
+    {
+      "no": 35,
+      "word": "artery",
+      "phonetic": "ˈaːtəri",
+      "zh": "n. 动脉；干线，要道",
+      "guess": "The main road through town is always busy. Trucks, buses and cars use it all day, and if it closes, the whole town stops. It is the town's main artery.",
+      "guessQ": "Why is the road called an artery?",
+      "meaningEn": "An artery is a tube that carries blood away from the heart, and by extension a main road or route that carries people and goods. Close an artery, and traffic is forced onto smaller streets that were never built for it.",
+      "context": "Planners describe the eastern motorway as the region's economic artery, and treat its congestion as a symptom rather than a cause. Widen it, and the traffic returns within four years; leave it, and freight begins to avoid the region altogether.",
+      "idx": 5
+    },
+    {
+      "no": 36,
+      "word": "internal",
+      "phonetic": "inˈtəːnəl",
+      "zh": "adj. 内在的；国内的；内心的",
+      "guess": "The company looked successful from the outside. Inside, an internal email showed that half the orders had never been delivered.",
+      "guessQ": "What did the internal email show?",
+      "meaningEn": "Internal means inside something: inside a body, a country or an organisation. An internal report is written for people within the organisation, not for the public.",
+      "context": "An internal review found that the agency had known about the fault for eighteen months. It was published only after a journalist obtained a copy, a familiar pattern: internal documents surface when external pressure makes silence expensive, and by then the public has stopped trusting the explanation.",
+      "idx": 6
+    },
+    {
+      "no": 37,
+      "word": "splash",
+      "phonetic": "splæʃ",
+      "zh": "n. 溅泼声，溅出的水（或泥浆等）；（光、色等的）斑点 v. 溅，泼",
+      "guess": "The boy jumped into the pool and made a huge splash. Water went everywhere, including onto his mother's book.",
+      "guessQ": "What kind of splash did the boy make?",
+      "meaningEn": "A splash is the sound and the spray made when something hits water. Figuratively, to make a splash is to attract a great deal of attention.",
+      "context": "The new gallery made a splash when it opened, with queues around the block for a month. Three years on, visitor numbers have settled at a third of that peak, which is roughly what the planners had forecast in private.",
+      "idx": 7
+    },
+    {
+      "no": 38,
+      "word": "calorie",
+      "phonetic": "ˈkæləri",
+      "zh": "n. 大卡（测量食物含热量的单位）；卡路里",
+      "guess": "She read the label on the bottle before drinking it. One bottle, it said, had only twenty calories, which is less than an apple.",
+      "guessQ": "How many calories were in the bottle?",
+      "meaningEn": "A calorie is a unit for measuring the energy in food and drink. Something low in calories gives the body little energy, though it may still be filling.",
+      "context": "Menus in chain restaurants must now show calorie counts, a policy designed to nudge rather than to forbid. Early studies find small effects, concentrated among the customers who already read labels, which is the group least in need of help.",
+      "idx": 8
+    },
+    {
+      "no": 39,
+      "word": "accommodation",
+      "phonetic": "əˌkɔməˈdeiʃən",
+      "zh": "n. 住处，膳宿",
+      "guess": "The course was cheap, but the city was expensive. Most students spent more on accommodation than on their fees.",
+      "guessQ": "Why did accommodation cost more than the course itself?",
+      "meaningEn": "Accommodation is a place to live or stay, especially for a period rather than permanently. The word can also mean an arrangement reached after both sides give up something.",
+      "context": "Universities have expanded faster than the towns around them can build accommodation, so students now compete with families for flats. The result is a squeeze that no single council can solve, because the demand crosses three council boundaries and the supply of housing does not.",
+      "idx": 9
+    },
+    {
+      "no": 40,
+      "word": "background",
+      "phonetic": "ˈbækɡraund",
+      "zh": "n. 出身背景，经历；背景资料；（画等的）背景，底子",
+      "guess": "Before the interview, she read about the company's history. She wanted some background, so that her questions would make sense.",
+      "guessQ": "What kind of background did she want before the interview?",
+      "meaningEn": "Background is the information that helps you understand a situation, or the part of a picture behind the main subject. It can also mean a person's family, education and earlier experience.",
+      "context": "Applicants from poorer backgrounds are less likely to be hired for jobs that require no degree at all, according to a study of four thousand replies to identical CVs. The gap persists after controls for grades, which rules out the obvious explanation.",
+      "idx": 10
+    }
+  ],
+  "reading": {
+    "title": "The Street Trial",
+    "text": "The western artery into the centre carried forty thousand cars a day, and the school beside it had some of the worst air in the country. In March the council closed the road to private traffic for a six-month trial. Emergency vehicles kept a single lane; everyone else was directed to the ring road.\n\nAn internal report leaked in April offered the first numbers. Nitrogen dioxide had fallen by a fifth, and children now walked to lessons past a wide splash of yellow paint. The same document admitted that the food vans outside the gate, whose calorie labels had been a flagship policy, had simply moved to the next street, and that households in rented accommodation along the route had received no help with noise.\n\nNo genuine consensus emerged. Shopkeepers demanded compensation, cycling groups wanted the closure made permanent, and in June the drivers' association began legal proceedings. The council has released the traffic counts but not the background papers behind them. A judge will decide in the autumn whether the trial may continue while the case is heard.",
+    "questions": [
+      {
+        "q": "The council closed the road mainly in order to",
+        "options": [
+          "reduce pollution around a school beside the road",
+          "speed up traffic travelling through the city centre",
+          "create space for a new street market in the area",
+          "test whether drivers would use the ring road instead"
+        ],
+        "answer": 0,
+        "why": "首段说学校旁空气最差，随即封路，因果明确；B 与封路目的相反，D 只是结果不是目的。"
+      },
+      {
+        "q": "The leaked report shows that the food vans",
+        "options": [
+          "were moved on by the council after residents complained",
+          "continued selling food nearby despite the new policy",
+          "were forced to display calorie information to pupils",
+          "stopped trading because pupils brought their own lunch"
+        ],
+        "answer": 1,
+        "why": "had simply moved to the next street，车只是挪了位置；D 把挪位夸大成停业，A 与 simply moved 矛盾。"
+      },
+      {
+        "q": "The phrase \"a flagship policy\" suggests that the calorie labels were",
+        "options": [
+          "the cheapest of all the measures the council had available",
+          "opposed by most of the parents at the school",
+          "copied directly from a scheme in another city",
+          "the measure the council itself was proudest of"
+        ],
+        "answer": 3,
+        "why": "flagship 指招牌政策，故此车挪走才难堪；A 谈成本、C 谈来源，原文均未涉及，属偷换。"
+      },
+      {
+        "q": "According to the last paragraph, the drivers' association",
+        "options": [
+          "accepted the trial but asked the council for compensation",
+          "persuaded the council to publish all of its papers",
+          "took the dispute to the courts in June",
+          "wanted the road reopened before the autumn term"
+        ],
+        "answer": 2,
+        "why": "in June... began legal proceedings，与 C 对应；A 把起诉说成接受，B 与未公开文件相反。"
+      },
+      {
+        "q": "The passage suggests that the trial's outcome",
+        "options": [
+          "has already been settled by the traffic counts",
+          "now depends on a decision outside the council's hands",
+          "will be decided by a vote of local residents",
+          "matters less than the compensation being paid out"
+        ],
+        "answer": 1,
+        "why": "末句 A judge will decide whether the trial may continue，决定权已转法院；A 与待裁决矛盾。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "unit": 10,
+  "words": [
+    {
+      "no": 11,
+      "word": "gigantic",
+      "phonetic": "ʤaiˈɡæntik",
+      "zh": "adj. 巨大的，庞大的",
+      "guess": "The new terminal is gigantic: you can walk for fifteen minutes and still be inside it. Signs every hundred metres tell you how far the nearest exit is.",
+      "guessQ": "How long would it take to cross a building that gigantic?",
+      "meaningEn": "Gigantic means extremely large, far bigger than usual. In the story the terminal is so gigantic that walking from one end to the other takes a quarter of an hour.",
+      "context": "The dam is gigantic by any measure: its wall holds back a lake forty kilometres long, and the concrete poured into it would build a motorway from London to Edinburgh. Critics reply that such structures silt up, and that the reservoir has a finite life.",
+      "idx": 1
+    },
+    {
+      "no": 12,
+      "word": "classical",
+      "phonetic": "ˈklæsikəl",
+      "zh": "adj. 古典的，经典的",
+      "guess": "She grew up on classical music and could name a symphony from four bars. Her friends found this impressive and slightly embarrassing at parties.",
+      "guessQ": "What does classical music mean to someone who grew up with it?",
+      "meaningEn": "Classical describes a formal tradition, especially in music or architecture, that has lasted for centuries and is studied rather than merely enjoyed. In the story she can identify a classical symphony after a few bars.",
+      "context": "Classical economics assumed that markets clear because people are rational, an assumption that survived decades of evidence to the contrary. Its defenders now describe it less as a description of behaviour than as a benchmark against which real behaviour can be measured.",
+      "idx": 2
+    },
+    {
+      "no": 13,
+      "word": "reclaim",
+      "phonetic": "riˈkleim",
+      "zh": "vt. 要回；开垦（荒地）；回收",
+      "guess": "The council wants to reclaim the old harbour land and turn it into housing. The fishermen say the harbour is not abandoned; it is simply quiet.",
+      "guessQ": "What might a city do with land it decides to reclaim?",
+      "meaningEn": "To reclaim land is to bring it back into use, often after it has been damaged, flooded or built over. In the story the council wants to reclaim a harbour that the fishermen still regard as theirs.",
+      "context": "Cities that once pushed industry to the edge now compete to reclaim the land it left behind. The difficulty is rarely technical; it is legal, because nobody can say who is responsible for pollution buried under a century of changing ownership.",
+      "idx": 3
+    },
+    {
+      "no": 14,
+      "word": "orientation",
+      "phonetic": "ˌɔːriənˈteiʃən",
+      "zh": "n. 方向，目标，方位；熟悉情况，适应，情况介绍",
+      "guess": "On his first morning the company put him through a two-hour orientation: badges, fire exits, the history of the firm. He met his actual team at lunch.",
+      "guessQ": "What should a good orientation cover on a new employee's first day?",
+      "meaningEn": "Orientation is an introduction that helps you find your way in a new place, job or course. In the story the orientation deals with badges and fire exits, and leaves the real work until lunchtime.",
+      "context": "New employees are usually given a day of orientation and then left to work out the rest for themselves. The gap between what the induction promises and what the job delivers is one of the strongest predictors of whether a recruit stays beyond the first year.",
+      "idx": 4
+    },
+    {
+      "no": 15,
+      "word": "huddle",
+      "phonetic": "ˈhʌdl",
+      "zh": "n. 挤在一起的人，一堆杂乱的东西 vt. 使聚集在一起 vi. 聚集在一起，挤作一团；把身子蜷成一团，蜷缩",
+      "guess": "The rain came suddenly, so the whole group huddled under the market awning with their shopping. Nobody spoke; they just waited, shoulder to shoulder.",
+      "guessQ": "Where would you huddle if a storm caught you outside?",
+      "meaningEn": "To huddle is to crowd close together, usually for warmth or shelter. In the story the shoppers huddle under an awning because there is nowhere else to escape the rain.",
+      "context": "When the storm hit, the crew huddled in the pump room with a torch and a radio and waited four hours for the water to fall. Afterwards they agreed that the waiting had been worse than the danger, and nobody complained.",
+      "idx": 5
+    },
+    {
+      "no": 16,
+      "word": "hasty",
+      "phonetic": "ˈheisti",
+      "zh": "adj. 草率的，轻率的；急速的，匆忙的，仓促完成的",
+      "guess": "He sent the email at midnight, angry and certain. It was a hasty reply, and by Monday it had reached three people it should never have reached.",
+      "guessQ": "What usually goes wrong after a hasty decision?",
+      "meaningEn": "A hasty action is done too quickly, without enough thought. In the story the reply is hasty because it is written in anger at midnight and sent before anyone has read it twice.",
+      "context": "A hasty decision to cut the maintenance budget saved the council two million pounds and cost it forty. The bridge closed for eighteen months, the diversion added twenty minutes to every journey, and the consultants had warned of exactly this.",
+      "idx": 6
+    },
+    {
+      "no": 17,
+      "word": "cancer",
+      "phonetic": "ˈkænsə",
+      "zh": "n. 癌，癌症，肿瘤",
+      "guess": "Her mother had cancer at fifty and beat it. Twenty years later she still goes for a check-up every spring, and still hates the waiting room.",
+      "guessQ": "Why is cancer still so feared when survival rates keep rising?",
+      "meaningEn": "Cancer is a serious disease in which cells in the body grow and divide out of control. In the story the mother survives it, but the yearly check-up keeps the fear alive.",
+      "context": "Cancer survival rates have improved faster than almost any other measure in medicine, but the gains are unevenly distributed: patients diagnosed early do far better than those diagnosed late, and late diagnosis is far more common in poorer districts, where screening is scarce.",
+      "idx": 7
+    },
+    {
+      "no": 18,
+      "word": "breed",
+      "phonetic": "briːd",
+      "zh": "n. 品种 v. 繁殖；养育，培育；酿成，产生",
+      "guess": "That breed of sheep survives on poor grass and needs almost no shelter. Farmers in the hills kept it for centuries for exactly that reason.",
+      "guessQ": "What is lost when farmers abandon a local breed?",
+      "meaningEn": "A breed is a type of animal or plant developed by people to have particular qualities. In the story the sheep is a breed valued because it lives on bad grass with almost no shelter.",
+      "context": "Farmers abandoned thousands of local breeds in the twentieth century in favour of a handful that yielded more under irrigation. The uniformity raised output and narrowed the gene pool, so that one new disease can now threaten an entire national herd.",
+      "idx": 8
+    },
+    {
+      "no": 19,
+      "word": "finance",
+      "phonetic": "ˈfainæns",
+      "zh": "n. 财政，金融；［常pl.］财源，财务情况 vt. 为…提供资金",
+      "guess": "The film was finished but had no finance for distribution. It sat in a cupboard for two years before a small company took a chance on it.",
+      "guessQ": "Who should finance a project the market has already refused?",
+      "meaningEn": "Finance is the money needed for a project, and also the business of managing money. In the story the film is complete but lacks the finance to reach an audience.",
+      "context": "The project was approved before its finance was secured, a sequence that almost always ends badly. Ministers assumed a private partner would appear once the plans looked credible; the partner assumed the state would carry the risk, and quietly waited.",
+      "idx": 9
+    },
+    {
+      "no": 20,
+      "word": "imaginative",
+      "phonetic": "iˈmæʤinətiv",
+      "zh": "adj. 富有想象力的；爱想象的",
+      "guess": "The children built a boat out of crates, rope and an old curtain. It sank immediately, but it was an imaginative attempt, and they started again the next day.",
+      "guessQ": "What makes a solution imaginative rather than merely expensive?",
+      "meaningEn": "Imaginative describes a person or idea that shows new and original thinking. In the story the boat is imaginative because it turns rubbish into something that almost floats.",
+      "context": "The most imaginative solutions to traffic congestion are rarely the ones actually built. Congestion pricing, which charges drivers for the space they occupy at the busiest hour, has worked in several cities, yet politicians avoid it because voters react first with anger.",
+      "idx": 10
+    }
+  ],
+  "reading": {
+    "title": "The Reclaimed Field",
+    "text": "For thirty years nothing grew on the old gasworks. When the city finally agreed to reclaim the land, the plans were gigantic: a lake, a footbridge, and a classical pavilion copied from a photograph in the archive. The pavilion was never built. What appeared instead was a market garden, six raised beds at a time.\n\nIts founder had been a nurse until cancer ended her career at forty. She chose old breeds of bean and tomato that supermarkets had rejected as too soft or too odd, and she refused to expand in a hasty response to the waiting list. Every volunteer attended a Saturday orientation before touching a tool, and every question of finance was argued out in the shed.\n\nIn winter the volunteers huddle around a stove, mending nets and arguing about next year. Journalists like to call the place imaginative, which annoys everyone who works there: nothing was invented. The land was poisoned, the soil was replaced, and the rest is patience. \"Clever,\" the founder says, \"is mostly remembering what you were told to forget.\"",
+    "questions": [
+      {
+        "q": "The pavilion in the original plan is mentioned in order to show that",
+        "options": [
+          "the city had plenty of money for public buildings",
+          "the plans were ambitious and out of touch with reality",
+          "local architects had been consulted about the design",
+          "the archive contained no photographs of the old site"
+        ],
+        "answer": 1,
+        "why": "原文列湖、人行桥和古典凉亭，随即说 The pavilion was never built，实际只有六畦菜地，计划宏大却落空。D 说档案里没有照片，与 copied from a photograph 相反。"
+      },
+      {
+        "q": "The founder chose old varieties of bean and tomato because they",
+        "options": [
+          "grew faster than the varieties sold in supermarkets",
+          "were cheaper to buy and easier to transport",
+          "had qualities the market had decided were faults",
+          "were the only seeds she could obtain locally"
+        ],
+        "answer": 2,
+        "why": "原文说这些老品种被超市以 too soft or too odd 拒收，正是 C 所说“市场认定为缺陷的特性”。A 说生长更快、B 说更便宜，原文都没有做过比较，只是凭空添加。"
+      },
+      {
+        "q": "The Saturday orientation and the arguments about finance suggest that the garden",
+        "options": [
+          "was run through careful and unhurried procedures of its own",
+          "depended almost entirely on the founder's own generosity",
+          "was struggling to attract enough volunteers each season",
+          "had quietly been taken over by the city council"
+        ],
+        "answer": 0,
+        "why": "orientation 安排在动工具之前，finance 要在棚里争论，可见流程谨慎、不赶时间，与 refused to expand in a hasty response 相呼应。C 说招不到志愿者，原文反而写有人排队等候。"
+      },
+      {
+        "q": "The word \"imaginative\" in the last paragraph carries a note of",
+        "options": [
+          "admiration for the journalists who had coined the phrase",
+          "doubt about whether the garden can survive the winter",
+          "pride in the originality of the founders' design",
+          "irritation at a label that misses the actual work"
+        ],
+        "answer": 3,
+        "why": "原文说记者爱用 imaginative 一词，当地人却觉得恼火（which annoys everyone who works there），随后又强调这里 nothing was invented，可见作者在批评这个标签名不副实。A 说钦佩记者，与 annoys 正相反。"
+      },
+      {
+        "q": "The founder's closing remark suggests that what looks like imagination is often",
+        "options": [
+          "a rare gift that only a few people happen to possess",
+          "the product of a good education in the sciences",
+          "the patient reuse of knowledge that others dismissed",
+          "a refusal to accept any advice from officials"
+        ],
+        "answer": 2,
+        "why": "末句说 clever 不过是记住别人叫你忘掉的东西，即把被丢弃的知识重新用起来。A 把它说成少数人的天赋，与“谁都能记住”的意思相悖。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+        读取“此刻哪个应用在前台”。只用来判断你切到了 X，之后把你送回本页。
+        声明不等于授权：安卓要求用户在「使用情况访问权限」里手动打开，应用无法自行开启。
+    -->
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!--
+        安卓 10 起禁止后台应用唤起界面。你在 X 里的时候本应用在后台，
+        没有这项授权就跳不回来（会被系统静默拦下）。声明不等于授权，仍需手动打开。
+    -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- 用来请求“别把我列入省电优化”，否则后台观察容易被系统掐断 -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <!-- 观察期间挂一条进度通知；平时挂一条待命通知保活 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!--
+        教材正文、音频都在本地，联网只为一件事：从下载页拉更新包（检查更新 / 下载资源）。
+        不联网也完全可用。
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!--
+        下面声明要“看见”的应用范围，供选择器列出、以及判断 ChatGPT 是否装了。
+        Android 11 起不加 queries 的话，queryIntentActivities 会什么都查不到。
+    -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+            <data android:mimeType="text/plain" />
+        </intent>
+        <package android:name="com.openai.chatgpt" />
+        <!-- 选中文字要能定向分享给 DeepSeek；安卓 11 起不声明就查不到这个包 -->
+        <package android:name="com.deepseek.chat" />
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ChattyReader">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.ChattyReader"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+            观察应用切换：你在 Clash / X 手动操作期间，负责在刷完之后把本应用拉回前台。
+            不执行任何点击，也不读取应用内容。
+        -->
+        <service
+            android:name=".watch.ChainService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="在你手动操作代理与 X 时观察应用切换，并把本应用带回前台" />
+        </service>
+
+    </application>
+
+</manifest>
