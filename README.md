@@ -93,7 +93,7 @@
 git clone https://github.com/coolflower1984/chatty-reader.git
 cd chatty-reader
 ./gradlew assembleDebug          # 产物：app/build/outputs/apk/debug/app-debug.apk
-./gradlew testDebugUnitTest      # 45 条单元测试
+./gradlew testDebugUnitTest      # 59 条单元测试
 ```
 
 `local.properties` 里写 `sdk.dir=/path/to/android-sdk`（该文件已在 `.gitignore` 中）。
@@ -136,7 +136,7 @@ app/src/main/java/com/chatty/reader/
 │   ├── UpdateDialog.kt          发现新版本的弹窗
 │   ├── SettingsScreen.kt        权限、时长、固定要求
 │   └── Sheets.kt                词库选择、发送预览
-├── share/AskAi.kt               定向 DeepSeek 的提示词与跳转
+├── share/AskAi.kt               定向腾讯元宝的提示词与跳转
 ├── watch/                       旧流程：前台监听、状态机、超级岛
 ├── vocab/                       词库与提示词拼接
 └── launch/                      应用跳转、系统授权
