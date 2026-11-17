@@ -13,3 +13,6 @@ local.properties
 # 构建产物/IDE 缓存
 .kotlin/
 *.hprof
+
+# 安装包走 GitHub Releases，仓库里不存二进制
+releases/*.apk

@@ -131,7 +131,7 @@ fun SelectableText(
 }
 
 /**
- * 底部的选区动作条：存生词本、丢给 DeepSeek、复制。
+ * 底部的选区动作条：存生词本、丢给元宝、复制。
  */
 @Composable
 fun SelectionActionBar(
@@ -217,7 +217,7 @@ fun SelectionActionBar(
                         Toast.makeText(
                             context,
                             when (outcome) {
-                                AskAi.Outcome.SENT -> "已送到 DeepSeek，按发送即可"
+                                AskAi.Outcome.SENT -> "已送到元宝，按发送即可"
                                 AskAi.Outcome.CHOOSER -> "选一个 AI 应用，文字已复制"
                                 AskAi.Outcome.FAILED -> "没找到能接收文字的应用"
                             },
@@ -227,7 +227,7 @@ fun SelectionActionBar(
                     },
                     modifier = Modifier.weight(1f),
                     contentPadding = PaddingValues(horizontal = 8.dp, vertical = 9.dp)
-                ) { Text("问 DeepSeek", style = MaterialTheme.typography.labelMedium) }
+                ) { Text("问元宝", style = MaterialTheme.typography.labelMedium) }
             }
 
             Row(verticalAlignment = Alignment.CenterVertically) {

@@ -131,6 +131,33 @@ object ContentRepo {
 
     /** 删掉某个下载的单元（内置的删不掉） */
     fun remove(context: Context, id: Int): Boolean = runCatching {
-        unitFile(context, id).delete() and File(root(context), "audio/u%03d".format(id)).deleteRecursively()
+        val json = unitFile(context, id).delete()
+        val audio = File(root(context), "audio/u%03d".format(id)).deleteRecursively()
+        // 只要删掉了其中一样就算成功：老版本留下的残缺目录也能清干净
+        json || audio
     }.getOrDefault(false)
+
+    /** 删掉一个包里所有已下载的单元，返回真正删掉的个数。内置内容不在 content 目录，动不到 */
+    fun removePack(context: Context, from: Int, to: Int): Int {
+        var removed = 0
+        for (id in from..to) {
+            val hasJson = unitFile(context, id).exists()
+            val hasAudio = File(root(context), "audio/u%03d".format(id)).exists()
+            if ((hasJson || hasAudio) && remove(context, id)) removed++
+        }
+        return removed
+    }
+
+    /** 一个包在手机上实际占了多少：单元 JSON + 该单元整个音频目录 */
+    fun packBytes(context: Context, from: Int, to: Int): Long {
+        var total = 0L
+        for (id in from..to) {
+            total += unitFile(context, id).length()
+            val dir = File(root(context), "audio/u%03d".format(id))
+            if (dir.isDirectory) {
+                total += dir.walkTopDown().filter { it.isFile }.sumOf { it.length() }
+            }
+        }
+        return total
+    }
 }

@@ -12,8 +12,8 @@ android {
         applicationId = "com.chatty.reader"
         minSdk = 26
         targetSdk = 35
-        versionCode = 20
-        versionName = "4.5"
+        versionCode = 24
+        versionName = "4.9"
     }
 
     buildTypes {

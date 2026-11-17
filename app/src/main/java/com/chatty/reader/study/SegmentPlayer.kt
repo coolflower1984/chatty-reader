@@ -4,6 +4,7 @@ import android.content.Context
 import android.media.AudioAttributes
 import android.media.MediaPlayer
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 
@@ -12,12 +13,20 @@ import androidx.compose.runtime.setValue
  *
  * 只用 MediaPlayer 一个实例，靠 reset 换源 —— 一轮朗读有几十段，
  * 每段新建一个实例会在低端机上攒出一堆 GC 压力。
+ *
+ * 队列有两种用法：点单段 / 词内三段用 [play]，整单元连播用 [playFrom]，
+ * 后者会把 [wholeUnit] 置 true，界面据此决定要不要显示连播条。
  */
 class SegmentPlayer(
     private val context: Context,
     /** 每开一段就回调一次，用来记学习进度；连播时后续片段也会走到这里 */
     // 这里必须写全限定名：同包下有个 study.Unit，裸写 Unit 会被当成那个类
-    private val onSegment: ((String) -> kotlin.Unit)? = null
+    private val onSegment: ((String) -> kotlin.Unit)? = null,
+    /** 每开一段回调当前队列下标，用来存连播断点 */
+    // 同样要全限定：这个包里 Unit 是学习单元那个类
+    private val onPosition: ((Int) -> kotlin.Unit)? = null,
+    /** 整串播完（不是手动停）时回调一次，界面据此把断点清掉 */
+    private val onFinished: (() -> kotlin.Unit)? = null
 ) {
 
     private val player = MediaPlayer()
@@ -29,6 +38,18 @@ class SegmentPlayer(
         private set
 
     var playing by mutableStateOf(false)
+        private set
+
+    /** 当前段在队列里的下标，-1 表示没在队列里 */
+    var index by mutableIntStateOf(-1)
+        private set
+
+    /** 当前队列长度 */
+    var size by mutableIntStateOf(0)
+        private set
+
+    /** 是否是「整单元连播」；点单段或词内三段时为 false */
+    var wholeUnit by mutableStateOf(false)
         private set
 
     init {
@@ -52,9 +73,21 @@ class SegmentPlayer(
             pause()
             return
         }
+        wholeUnit = false
+        start(keys, 0)
+    }
+
+    /** 整单元连播；[start] 越界时从头开始 */
+    fun playFrom(keys: List<String>, start: Int) {
+        if (keys.isEmpty()) return
+        wholeUnit = true
+        start(keys, if (start in keys.indices) start else 0)
+    }
+
+    private fun start(keys: List<String>, at: Int) {
         queue = keys
-        pos = 0
-        open(0)
+        size = keys.size
+        open(at)
     }
 
     fun pause() {
@@ -68,9 +101,25 @@ class SegmentPlayer(
         playing = true
     }
 
+    fun toggle() {
+        if (playing) pause() else resume()
+    }
+
+    /** 跳到队列里的第 [i] 段；整单元连播时清单点谁跳谁 */
+    fun jumpTo(i: Int) {
+        if (i in queue.indices) open(i)
+    }
+
+    fun next() = jumpTo(index + 1)
+
+    fun previous() = jumpTo(index - 1)
+
     fun stop() {
         queue = emptyList()
         pos = 0
+        size = 0
+        index = -1
+        wholeUnit = false
         current = null
         playing = false
         runCatching { if (player.isPlaying) player.stop() }
@@ -79,19 +128,23 @@ class SegmentPlayer(
     fun release() {
         playing = false
         current = null
+        index = -1
+        wholeUnit = false
         runCatching { player.release() }
     }
 
-    private fun open(index: Int) {
-        val key = queue.getOrNull(index)
+    private fun open(i: Int) {
+        val key = queue.getOrNull(i)
         if (key == null) {
             stop()
             return
         }
-        pos = index
+        pos = i
+        index = i
         current = key
         playing = true
         runCatching { onSegment?.invoke(key) }
+        runCatching { onPosition?.invoke(i) }
 
         val ok = runCatching {
             player.reset()
@@ -113,6 +166,12 @@ class SegmentPlayer(
 
     private fun advance() {
         val next = pos + 1
-        if (next < queue.size) open(next) else stop()
+        if (next < queue.size) {
+            open(next)
+        } else {
+            val wasWholeUnit = wholeUnit
+            stop()
+            if (wasWholeUnit) runCatching { onFinished?.invoke() }
+        }
     }
 }

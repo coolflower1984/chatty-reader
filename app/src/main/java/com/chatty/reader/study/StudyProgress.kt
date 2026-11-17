@@ -22,6 +22,8 @@ object StudyProgress {
     private const val K_LAST_AT = "last_at"
 
     private const val PREFIX = "p"
+    private const val PLAY_PREFIX = "c"
+    private const val SCROLL_PREFIX = "s"
 
     /** 进度一变就 +1。界面读它，就能跟着重算 */
     var version by mutableIntStateOf(0)
@@ -108,9 +110,52 @@ object StudyProgress {
             .remove(keyOf(unitId))
             .remove("t$unitId")
             .remove("w$unitId")
+            .remove("$PLAY_PREFIX$unitId")
+            .remove("$SCROLL_PREFIX$unitId")
             .apply()
         if (s.getInt(K_LAST_UNIT, 0) == unitId) recomputeLast(context)
         version++
+    }
+
+    // ---------- 阅读页停在列表的哪一项 ----------
+
+    /**
+     * 上次退出单元时停在列表的第几项、偏移多少像素。
+     *
+     * 存的是 LazyColumn 的下标，不是词号：停在阅读第二段或第 3 题也能原样回去，
+     * 比「回到第一个没学的词」更贴实际。前提是列表项结构稳定 —— 阅读页第一步
+     * 就是让断点卡永远占着第 0 项，不再随有无断点增删。
+     */
+    fun scroll(context: Context, unitId: Int): Pair<Int, Int>? {
+        val raw = sp(context).getString("$SCROLL_PREFIX$unitId", null) ?: return null
+        val parts = raw.split(':')
+        if (parts.size != 2) return null
+        val index = parts[0].toIntOrNull() ?: return null
+        val offset = parts[1].toIntOrNull() ?: return null
+        if (index < 0 || offset < 0) return null
+        return index to offset
+    }
+
+    fun setScroll(context: Context, unitId: Int, index: Int, offset: Int) {
+        if (index < 0 || offset < 0) return
+        sp(context).edit()
+            .putString("$SCROLL_PREFIX$unitId", "$index:$offset")
+            .apply()
+    }
+
+    // ---------- 整单元连播的断点 ----------
+
+    /** 上次连播停在第几段；-1 表示没有断点。段序号由 Unit.playNodes() 决定 */
+    fun playPos(context: Context, unitId: Int): Int =
+        sp(context).getInt("$PLAY_PREFIX$unitId", -1)
+
+    fun setPlayPos(context: Context, unitId: Int, index: Int) {
+        if (index < 0) return
+        sp(context).edit().putInt("$PLAY_PREFIX$unitId", index).apply()
+    }
+
+    fun clearPlayPos(context: Context, unitId: Int) {
+        sp(context).edit().remove("$PLAY_PREFIX$unitId").apply()
     }
 
     /** 重置掉「当前单元」之后，把「上次学到哪」挪回剩下最近的单元 */

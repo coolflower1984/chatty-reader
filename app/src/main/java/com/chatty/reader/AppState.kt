@@ -25,7 +25,7 @@ import kotlinx.coroutines.cancel
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-enum class Screen { HOME, SETTINGS, PICKER, LIBRARY, READER, VOCAB }
+enum class Screen { HOME, SETTINGS, PICKER, LIBRARY, READER, VOCAB, PACKS }
 
 /** 发送前要走的步骤，顺序即界面从上到下的顺序 */
 enum class PrepStep { VPN, CHECK }

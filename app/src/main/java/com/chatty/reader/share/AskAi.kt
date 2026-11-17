@@ -5,16 +5,16 @@ import android.content.Intent
 import android.content.pm.PackageManager
 
 /**
- * 把选中的词或句子递给 DeepSeek 求详解。
+ * 把选中的词或句子递给腾讯元宝求详解。
  *
- * 走系统分享，不经过任何服务器、不需要 API Key：DeepSeek 安卓版注册了 text/plain
+ * 走系统分享，不经过任何服务器、不需要 API Key：元宝安卓版注册了 text/plain
  * 接收方，文字会直接落在它的输入框里，发送键还得自己按一下。
- * 没装 DeepSeek 就退到系统选择器，用户选别的 AI 应用也能用。
+ * 没装元宝就退到系统选择器，用户选别的 AI 应用也能用。
  */
 object AskAi {
 
-    /** DeepSeek 官方安卓包名 */
-    const val DEEPSEEK_PKG = "com.deepseek.chat"
+    /** 腾讯元宝官方安卓包名（应用商店与各家下载站一致） */
+    const val YUANBAO_PKG = "com.tencent.hunyuan.app.chat"
 
     enum class Outcome { SENT, CHOOSER, FAILED }
 
@@ -53,7 +53,7 @@ object AskAi {
 
         val pm = context.packageManager
         val installed = runCatching {
-            pm.getApplicationInfo(DEEPSEEK_PKG, 0)
+            pm.getApplicationInfo(YUANBAO_PKG, 0)
         }.isSuccess
 
         val share = Intent(Intent.ACTION_SEND).apply {
@@ -63,7 +63,7 @@ object AskAi {
         }
 
         if (installed) {
-            share.setPackage(DEEPSEEK_PKG)
+            share.setPackage(YUANBAO_PKG)
             val resolved = runCatching {
                 pm.resolveActivity(share, PackageManager.MATCH_DEFAULT_ONLY)
             }.getOrNull()
@@ -71,7 +71,7 @@ object AskAi {
                 return Outcome.SENT
             }
             // 定向分享被拒（部分 ROM 限制），退回启动 App，文字已在剪贴板里
-            val launch = runCatching { pm.getLaunchIntentForPackage(DEEPSEEK_PKG) }.getOrNull()
+            val launch = runCatching { pm.getLaunchIntentForPackage(YUANBAO_PKG) }.getOrNull()
             if (launch != null) {
                 launch.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                 if (runCatching { context.startActivity(launch) }.isSuccess) return Outcome.CHOOSER

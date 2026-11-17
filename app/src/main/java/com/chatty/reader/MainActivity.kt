@@ -26,6 +26,7 @@ import com.chatty.reader.ui.AppPickerScreen
 import com.chatty.reader.ui.ChattyTheme
 import com.chatty.reader.ui.HomeScreen
 import com.chatty.reader.ui.LibraryScreen
+import com.chatty.reader.ui.PackManagerScreen
 import com.chatty.reader.ui.ReaderScreen
 import com.chatty.reader.study.ApkUpdate
 import com.chatty.reader.study.UpdateCenter
@@ -101,6 +102,7 @@ class MainActivity : ComponentActivity() {
                 BackHandler(enabled = state.screen != Screen.HOME) {
                     state.screen = when (state.screen) {
                         Screen.READER -> Screen.LIBRARY
+                        Screen.PACKS -> Screen.LIBRARY
                         Screen.VOCAB -> state.vocabReturn
                         Screen.PICKER -> Screen.SETTINGS
                         else -> Screen.HOME
@@ -147,7 +149,12 @@ class MainActivity : ComponentActivity() {
 
                     Screen.LIBRARY -> LibraryScreen(
                         onOpen = { state.openUnit(it) },
-                        onBack = { state.screen = Screen.HOME }
+                        onBack = { state.screen = Screen.HOME },
+                        onOpenPacks = { state.screen = Screen.PACKS }
+                    )
+
+                    Screen.PACKS -> PackManagerScreen(
+                        onBack = { state.screen = Screen.LIBRARY }
                     )
 
                     Screen.READER -> {
@@ -155,7 +162,8 @@ class MainActivity : ComponentActivity() {
                         if (unit == null) {
                             LibraryScreen(
                                 onOpen = { state.openUnit(it) },
-                                onBack = { state.screen = Screen.HOME }
+                                onBack = { state.screen = Screen.HOME },
+                                onOpenPacks = { state.screen = Screen.PACKS }
                             )
                         } else {
                             ReaderScreen(
