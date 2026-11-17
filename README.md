@@ -4,7 +4,7 @@
 
 早期那套「开梯子 → 刷 X → 发给 ChatGPT」的流程还在，但收进了首页最下方的折叠区，当备用入口。
 
-> 当前版本 **v4.9**（versionCode 24）· minSdk 26 · targetSdk 35 · Kotlin + Jetpack Compose
+> 当前版本 **v5.0**（versionCode 25）· minSdk 26 · targetSdk 35 · Kotlin + Jetpack Compose
 
 ---
 
@@ -44,6 +44,9 @@
 | **问元宝（v4.6）** | 选区动作条从 DeepSeek 换成腾讯元宝，定向分享到它的输入框，没装则退回系统选择器 |
 | **更新包管理（v4.7）** | 独立的包管理页：23 个包各占一行，单独下载、单独删除，显示每包已装几个单元与磁盘占用，顶部汇总总占用和可用空间，支持「删除全部下载」 |
 | **列表检索（v4.8）** | 顶部搜索框认单元号（`37`、`unit 37`、`u37`）、单词、中文释义、阅读标题；列表按每 10 个单元分段，段头可折叠，默认只展开「上次学的那一段」，横向胶囊一键跳到某一段，滚远后浮出「回到上次」 |
+| **段间停顿（v5.0）** | 连播时每段读完后固定空 1 秒再进下一段或下一个词，留出跟读与回想的时间 |
+| **每词遍数 / 整单元循环（v5.0）** | 底部播放条「每词×N」可改 1 / 2 / 3 遍：一个词 ①→②→③ 算一遍，多遍就在该词内部重来，不回到第一个词；也可打开「整单元循环」，题目播完从头再来 |
+| **一键生词 + 问元宝（v5.0）** | 选区动作条新增主按钮「＋ 生词本并问元宝」：一次点击既写入生词本，又把提示词送进元宝输入框；原有两个动作保留为「只存生词本」「只问元宝」 |
 | **播放跟随（v4.9）** | 连播时页面跟着当前段落滚，滚到哪张卡就停在哪张卡；自己拖动列表后 6 秒内不抢滚动，想回看上一段不会被拽回来 |
 | **清单折叠（v4.9）** | 播放清单里同一个词的三段收成一行（`01 abandon · 3 段`），点开再选具体某一步；正在播的词自动展开，「全部展开 / 全部收起」一键切换 |
 | **单元内定位（v4.8）** | 退出时记住停在列表的哪一项，下次进来自动落回原处（停在阅读第二段、第 3 题也一样）；右上角「☰ 目录」列出 10 词 + 阅读 + 5 题，带已学勾，点谁跳谁；翻远了浮出「回到第 n 个词」 |
@@ -93,12 +96,12 @@
 git clone https://github.com/coolflower1984/chatty-reader.git
 cd chatty-reader
 ./gradlew assembleDebug          # 产物：app/build/outputs/apk/debug/app-debug.apk
-./gradlew testDebugUnitTest      # 59 条单元测试
+./gradlew testDebugUnitTest      # 65 条单元测试
 ```
 
 `local.properties` 里写 `sdk.dir=/path/to/android-sdk`（该文件已在 `.gitignore` 中）。
 
-安装包放在 [Releases](https://github.com/coolflower1984/chatty-reader/releases) 页：进最新一版（当前 v4.9），在 Assets 里点 `chatty-reader-v4.9.apk` 下载。仓库只存源码与内置音频，不放二进制。
+安装包放在 [Releases](https://github.com/coolflower1984/chatty-reader/releases) 页：进最新一版（当前 v5.0），在 Assets 里点 `chatty-reader-v5.0.apk` 下载。仓库只存源码与内置音频，不放二进制。
 
 ---
 

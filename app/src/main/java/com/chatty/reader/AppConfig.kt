@@ -47,6 +47,27 @@ class AppConfig(context: Context) {
             sp.edit().putFloat(K_FONT_SCALE, safe).apply()
         }
 
+    // ---------- 连播 ----------
+
+    /** 每个词播几遍（三段为一轮）；1 是不重复 */
+    private val _wordRepeat = mutableIntStateOf(sp.getInt(K_WORD_REPEAT, 1).coerceIn(1, 3))
+    var wordRepeat: Int
+        get() = _wordRepeat.intValue
+        set(v) {
+            val safe = v.coerceIn(1, 3)
+            _wordRepeat.intValue = safe
+            sp.edit().putInt(K_WORD_REPEAT, safe).apply()
+        }
+
+    /** 整单元播完（含阅读和题目）后是否从头再来 */
+    private val _loopUnit = mutableStateOf(sp.getBoolean(K_LOOP_UNIT, false))
+    var loopUnit: Boolean
+        get() = _loopUnit.value
+        set(v) {
+            _loopUnit.value = v
+            sp.edit().putBoolean(K_LOOP_UNIT, v).apply()
+        }
+
     // ---------- 固定要求 ----------
 
     private val _requirement = mutableStateOf(
@@ -188,6 +209,8 @@ class AppConfig(context: Context) {
         const val K_ISLAND_FORCE = "island_force"
         const val K_KEEP_ALIVE = "keep_alive_pref"
         const val K_FONT_SCALE = "reader_font_scale"
+        const val K_WORD_REPEAT = "play_word_repeat"
+        const val K_LOOP_UNIT = "play_loop_unit"
 
         const val MIN_SCALE = 0.85f
         const val MAX_SCALE = 1.5f

@@ -174,6 +174,46 @@ fun SelectionActionBar(
 
             Spacer(Modifier.height(10.dp))
 
+            // 最常用的一条：存下来，同时把详解要过来
+            Button(
+                onClick = {
+                    val picked = grab()
+                    if (picked.isBlank()) {
+                        Toast.makeText(context, "没拿到选中的文字，再选一次", Toast.LENGTH_SHORT).show()
+                        return@Button
+                    }
+                    val added = VocabBook.add(
+                        context = context,
+                        text = picked,
+                        kind = kindOf(picked),
+                        unitId = payload.unitId,
+                        contextText = payload.paragraph
+                    )
+                    val outcome = AskAi.send(
+                        context = context,
+                        text = picked,
+                        kind = kindOf(picked),
+                        unitId = payload.unitId,
+                        contextText = payload.paragraph
+                    )
+                    val tail = when (outcome) {
+                        AskAi.Outcome.SENT -> "已送到元宝，按发送即可"
+                        AskAi.Outcome.CHOOSER -> "文字已复制，选一个 AI 应用"
+                        AskAi.Outcome.FAILED -> "没找到能接收文字的应用"
+                    }
+                    Toast.makeText(
+                        context,
+                        (if (added) "已加入生词本，" else "生词本里已有，") + tail,
+                        Toast.LENGTH_SHORT
+                    ).show()
+                    onClose()
+                },
+                modifier = Modifier.fillMaxWidth(),
+                contentPadding = PaddingValues(horizontal = 8.dp, vertical = 10.dp)
+            ) { Text("＋ 生词本并问元宝", style = MaterialTheme.typography.labelMedium) }
+
+            Spacer(Modifier.height(8.dp))
+
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 OutlinedButton(
                     onClick = {
@@ -198,14 +238,14 @@ fun SelectionActionBar(
                     },
                     modifier = Modifier.weight(1f),
                     contentPadding = PaddingValues(horizontal = 8.dp, vertical = 9.dp)
-                ) { Text("＋ 生词本", style = MaterialTheme.typography.labelMedium) }
+                ) { Text("只存生词本", style = MaterialTheme.typography.labelMedium) }
 
-                Button(
+                OutlinedButton(
                     onClick = {
                         val picked = grab()
                         if (picked.isBlank()) {
                             Toast.makeText(context, "没拿到选中的文字，再选一次", Toast.LENGTH_SHORT).show()
-                            return@Button
+                            return@OutlinedButton
                         }
                         val outcome = AskAi.send(
                             context = context,
@@ -227,7 +267,7 @@ fun SelectionActionBar(
                     },
                     modifier = Modifier.weight(1f),
                     contentPadding = PaddingValues(horizontal = 8.dp, vertical = 9.dp)
-                ) { Text("问元宝", style = MaterialTheme.typography.labelMedium) }
+                ) { Text("只问元宝", style = MaterialTheme.typography.labelMedium) }
             }
 
             Row(verticalAlignment = Alignment.CenterVertically) {

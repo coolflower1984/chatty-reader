@@ -6,6 +6,7 @@ import com.chatty.reader.study.Reading
 import com.chatty.reader.study.Unit
 import com.chatty.reader.study.Word
 import com.chatty.reader.study.listIndexOf
+import com.chatty.reader.study.nextPlayStep
 import com.chatty.reader.study.playNodes
 import com.chatty.reader.study.safeIndex
 import org.junit.Assert.assertEquals
@@ -106,5 +107,46 @@ class PlaybackQueueTest {
         assertEquals(6, nodes.listIndexOf(11, 3)) // 第 2 题
         assertNull(nodes.listIndexOf(12, 3))
         assertNull(nodes.listIndexOf(-1, 3))
+    }
+
+    @Test
+    fun repeatOnceMovesToNextWord() {
+        // 3 个词 12 段；词 1 的第三段（下标 2）之后应该进词 2
+        assertEquals(3 to 0, nextPlayStep(2, 12, 3, repeatTimes = 1, round = 0, loop = false))
+        // 词内前两段照常往下走
+        assertEquals(1 to 0, nextPlayStep(0, 12, 3, repeatTimes = 1, round = 0, loop = false))
+    }
+
+    @Test
+    fun repeatTwiceLoopsInsideTheSameWord() {
+        // 第一遍的 ③ 之后回到同一个词的 ①
+        assertEquals(0 to 1, nextPlayStep(2, 12, 3, repeatTimes = 2, round = 0, loop = false))
+        // 第二遍的 ③ 之后才进下一个词，遍数清零
+        assertEquals(3 to 0, nextPlayStep(2, 12, 3, repeatTimes = 2, round = 1, loop = false))
+    }
+
+    @Test
+    fun repeatThreeTimesCountsRounds() {
+        assertEquals(3 to 1, nextPlayStep(5, 12, 3, repeatTimes = 3, round = 0, loop = false))
+        assertEquals(3 to 2, nextPlayStep(5, 12, 3, repeatTimes = 3, round = 1, loop = false))
+        assertEquals(6 to 0, nextPlayStep(5, 12, 3, repeatTimes = 3, round = 2, loop = false))
+    }
+
+    @Test
+    fun readingAndQuestionsNeverRepeat() {
+        // 下标 9 是阅读，10、11 是题目：即使 repeat=3 也只往前走
+        assertEquals(10 to 0, nextPlayStep(9, 12, 3, repeatTimes = 3, round = 0, loop = false))
+        assertEquals(11 to 0, nextPlayStep(10, 12, 3, repeatTimes = 3, round = 0, loop = false))
+        assertNull(nextPlayStep(11, 12, 3, repeatTimes = 3, round = 0, loop = false))
+    }
+
+    @Test
+    fun loopRestartsFromFirstWord() {
+        assertEquals(0 to 0, nextPlayStep(11, 12, 3, repeatTimes = 1, round = 0, loop = true))
+    }
+
+    @Test
+    fun emptyQueueHasNoNextStep() {
+        assertNull(nextPlayStep(0, 0, 3, repeatTimes = 1, round = 0, loop = true))
     }
 }

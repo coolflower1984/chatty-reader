@@ -56,6 +56,50 @@ fun Unit.playNodes(): List<PlayNode> = buildList {
 fun List<PlayNode>.safeIndex(index: Int): Int = if (index in indices) index else 0
 
 /**
+ * 一段播完后该走哪一段。
+ *
+ * @param from 刚播完的下标
+ * @param size 队列总段数
+ * @param wordCount 队列前部有多少个词（每个词 [span] 段）；0 表示这条队列里没有词
+ * @param repeatTimes 每个词播几遍，<=0 视为不限
+ * @param round 当前这个词已经播完几遍
+ * @param loop 整单元播完后是否从头再来
+ * @return 下一段下标 + 更新后的遍数；null 表示整轮结束
+ *
+ * 重复只发生在词内部：③ 播完回到同一个词的 ①，而不是回到第一个词；
+ * 阅读和题目永远只播一遍。
+ */
+fun nextPlayStep(
+    from: Int,
+    size: Int,
+    wordCount: Int,
+    repeatTimes: Int,
+    round: Int,
+    loop: Boolean,
+    span: Int = 3
+): Pair<Int, Int>? {
+    if (size <= 0) return null
+    var r = round
+    val wordsEnd = wordCount * span
+    if (span > 0 && from in 0 until wordsEnd) {
+        // 这一段是不是它所在词的最后一个
+        val wordEnd = ((from / span) + 1) * span - 1
+        if (from == wordEnd) {
+            r += 1
+            val times = if (repeatTimes <= 0) Int.MAX_VALUE else repeatTimes
+            if (r < times) return (from - span + 1) to r
+            r = 0
+        }
+    }
+    val next = from + 1
+    return when {
+        next < size -> next to r
+        loop -> 0 to 0
+        else -> null
+    }
+}
+
+/**
  * 连播第 [index] 段，对应阅读页列表的第几项。
  *
  * 列表第 0 项固定留给断点卡，词从 1 开始，阅读紧随其后，题目再往后。

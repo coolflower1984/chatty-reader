@@ -42,9 +42,11 @@ import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
+import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
@@ -1038,7 +1040,15 @@ fun ReaderScreen(
                 StudyProgress.clearPlayPos(appContext, unit.id)
                 breakpoint = -1
             }
-        )
+        ).also {
+            it.wordRepeat = state.config.wordRepeat
+            it.loopUnit = state.config.loopUnit
+        }
+    }
+    // 设置改了立刻作用于正在播的这一轮，不用退出去重进
+    LaunchedEffect(state.config.wordRepeat, state.config.loopUnit) {
+        player.wordRepeat = state.config.wordRepeat
+        player.loopUnit = state.config.loopUnit
     }
     DisposableEffect(unit.id) {
         onDispose {
@@ -1104,6 +1114,7 @@ fun ReaderScreen(
     val scale = state.config.fontScale
     var selection by remember { mutableStateOf<SelectionPayload?>(null) }
     var showFont by remember { mutableStateOf(false) }
+    var showPlayOptions by remember { mutableStateOf(false) }
 
     // 选区打开时，返回键先收动作条，而不是退出阅读
     BackHandler(enabled = selection != null) { selection = null }
@@ -1113,6 +1124,16 @@ fun ReaderScreen(
             current = scale,
             onChange = { state.config.fontScale = it },
             onDismiss = { showFont = false }
+        )
+    }
+
+    if (showPlayOptions) {
+        PlayOptionsDialog(
+            repeat = state.config.wordRepeat,
+            loop = state.config.loopUnit,
+            onRepeat = { state.config.wordRepeat = it },
+            onLoop = { state.config.loopUnit = it },
+            onDismiss = { showPlayOptions = false }
         )
     }
 
@@ -1143,7 +1164,11 @@ fun ReaderScreen(
                     if (!player.wholeUnit) {
                         IconButton(
                             onClick = {
-                                player.playFrom(nodes.map { it.key }, nodes.safeIndex(breakpoint))
+                                player.playFrom(
+                                    nodes.map { it.key },
+                                    nodes.safeIndex(breakpoint),
+                                    unit.words.size
+                                )
                             },
                             modifier = Modifier.size(40.dp)
                         ) {
@@ -1204,7 +1229,7 @@ fun ReaderScreen(
                             position = breakpoint + 1,
                             total = nodes.size,
                             onResume = {
-                                player.playFrom(nodes.map { it.key }, breakpoint)
+                                player.playFrom(nodes.map { it.key }, breakpoint, unit.words.size)
                             },
                             onDismiss = {
                                 StudyProgress.clearPlayPos(appContext, unit.id)
@@ -1258,7 +1283,10 @@ fun ReaderScreen(
                     PlayBar(
                         nodes = nodes,
                         player = player,
+                        repeatTimes = state.config.wordRepeat,
+                        loopUnit = state.config.loopUnit,
                         onOpenList = { showList = true },
+                        onOpenOptions = { showPlayOptions = true },
                         onClose = {
                             breakpoint = player.index
                             player.stop()
@@ -1490,7 +1518,10 @@ private fun BreakpointCard(
 private fun PlayBar(
     nodes: List<PlayNode>,
     player: SegmentPlayer,
+    repeatTimes: Int,
+    loopUnit: Boolean,
     onOpenList: () -> Unit,
+    onOpenOptions: () -> Unit,
     onClose: () -> Unit
 ) {
     val i = player.index
@@ -1517,6 +1548,14 @@ private fun PlayBar(
                     modifier = Modifier.weight(1f)
                 )
                 Spacer(Modifier.width(8.dp))
+                if (player.inGap) {
+                    Text(
+                        "停顿…",
+                        style = MaterialTheme.typography.labelSmall,
+                        color = MaterialTheme.colorScheme.primary,
+                        modifier = Modifier.padding(end = 8.dp)
+                    )
+                }
                 Text(
                     "${i + 1}/${nodes.size}",
                     style = MaterialTheme.typography.labelSmall,
@@ -1560,6 +1599,18 @@ private fun PlayBar(
                 ) { Text("下一段", style = MaterialTheme.typography.labelSmall) }
 
                 Spacer(Modifier.weight(1f))
+
+                // 当前设置一目了然：每词几遍 / 是否整单元循环
+                TextButton(
+                    onClick = onOpenOptions,
+                    contentPadding = PaddingValues(horizontal = 8.dp, vertical = 4.dp)
+                ) {
+                    Text(
+                        "每词×$repeatTimes${if (loopUnit) " 循环" else ""}",
+                        style = MaterialTheme.typography.labelSmall,
+                        color = MaterialTheme.colorScheme.primary
+                    )
+                }
 
                 TextButton(
                     onClick = onOpenList,
@@ -1877,6 +1928,77 @@ private fun FontScaleDialog(
             TextButton(onClick = { onChange(1f) }) { Text("恢复默认") }
         },
         dismissButton = {
+            TextButton(onClick = onDismiss) { Text("完成") }
+        }
+    )
+}
+
+/**
+ * 连播设置：每个词播几遍、整单元是否循环。
+ *
+ * 重复只作用于词（① → ② → ③ 算一遍），阅读和题目永远只播一次；
+ * 段与段之间固定空 1 秒，留出跟读和回想的时间。
+ */
+@Composable
+private fun PlayOptionsDialog(
+    repeat: Int,
+    loop: Boolean,
+    onRepeat: (Int) -> Unit,
+    onLoop: (Boolean) -> Unit,
+    onDismiss: () -> Unit
+) {
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text("连播设置") },
+        text = {
+            Column {
+                Text(
+                    "每个词播几遍",
+                    style = MaterialTheme.typography.labelMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+                Spacer(Modifier.height(8.dp))
+                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    listOf(1, 2, 3).forEach { n ->
+                        if (n == repeat) {
+                            Button(onClick = { onRepeat(n) }) { Text("$n 遍") }
+                        } else {
+                            OutlinedButton(onClick = { onRepeat(n) }) { Text("$n 遍") }
+                        }
+                    }
+                }
+                Spacer(Modifier.height(6.dp))
+                Text(
+                    "① 猜一猜 → ② 释义 → ③ 六级语境 算一遍；选 2 遍就是这个词连着听两轮再进下一个词。",
+                    style = MaterialTheme.typography.labelSmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+
+                Spacer(Modifier.height(14.dp))
+                HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.5f))
+                Spacer(Modifier.height(10.dp))
+
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Column(modifier = Modifier.weight(1f)) {
+                        Text("整单元循环", style = MaterialTheme.typography.bodyMedium)
+                        Text(
+                            "题目播完后从头再来，适合磨耳朵；关掉则停在末尾",
+                            style = MaterialTheme.typography.labelSmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                    Switch(checked = loop, onCheckedChange = onLoop)
+                }
+
+                Spacer(Modifier.height(10.dp))
+                Text(
+                    "每段读完后空 1 秒再进下一段，这条固定不设开关。",
+                    style = MaterialTheme.typography.labelSmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
+        },
+        confirmButton = {
             TextButton(onClick = onDismiss) { Text("完成") }
         }
     )
