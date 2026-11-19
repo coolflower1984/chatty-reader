@@ -71,21 +71,24 @@ fun AppPickerScreen(state: AppState, onBack: () -> Unit) {
     val current = when (state.pickerSlot) {
         0 -> state.config.clashPkg
         1 -> state.config.xPkg
-        else -> state.config.gptPkg
+        2 -> state.config.gptPkg
+        else -> state.config.askPkg
     }
 
     fun apply(pkg: String) {
         when (state.pickerSlot) {
             0 -> state.config.clashPkg = pkg
             1 -> state.config.xPkg = pkg
-            else -> state.config.gptPkg = pkg
+            2 -> state.config.gptPkg = pkg
+            else -> state.config.askPkg = pkg
         }
     }
 
     val title = when (state.pickerSlot) {
         0 -> "选择代理工具"
         1 -> "选择确认网络的应用"
-        else -> "选择 ChatGPT"
+        2 -> "选择 ChatGPT"
+        else -> "选择问 AI 的应用"
     }
 
     Scaffold(

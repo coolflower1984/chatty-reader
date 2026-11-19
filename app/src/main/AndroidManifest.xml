@@ -45,7 +45,9 @@
             <data android:mimeType="text/plain" />
         </intent>
         <package android:name="com.openai.chatgpt" />
-        <!-- 选中文字要能定向分享给腾讯元宝；安卓 11 起不声明就查不到这个包 -->
+        <!-- 选中文字要能定向分享给元宝或别的 AI；安卓 11 起不声明就查不到这个包。
+             上面那条 SEND + text/plain 已经把「能收文字的应用」都放出来了，
+             这里只是兜底：有些应用没声明接收 text/plain，但仍可能被设成目标。 -->
         <package android:name="com.tencent.hunyuan.app.chat" />
     </queries>
 

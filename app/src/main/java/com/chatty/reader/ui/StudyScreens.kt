@@ -115,6 +115,10 @@ import com.chatty.reader.study.playNodes
 import com.chatty.reader.study.safeIndex
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableLongStateOf
+import androidx.compose.foundation.gestures.awaitEachGesture
+import androidx.compose.foundation.gestures.awaitFirstDown
+import androidx.compose.ui.input.pointer.PointerEventPass
+import androidx.compose.ui.input.pointer.pointerInput
 
 /* ---------------- 单元列表 ---------------- */
 
@@ -1071,6 +1075,12 @@ fun ReaderScreen(
     // 播放时页面跟着当前段走。自己拖过列表就先让 6 秒，免得想回看上一段被拽回来
     var userScrolledAt by remember { mutableLongStateOf(0L) }
 
+    // 手指按下也算「正在操作」。长按选词得按住 500ms 才出选区，
+    // 这期间要是程序自己滚一下，手势会被动画打断 —— 选区菜单就永远弹不出来
+    var userPressedAt by remember { mutableLongStateOf(0L) }
+
+    val selection = remember { mutableStateOf<SelectionPayload?>(null) }
+
     // 只认手指拖动；程序自己滚的时候不会触发，所以不会把自己也当成「用户想停下」
     LaunchedEffect(listState) {
         listState.interactionSource.interactions.collect { interaction ->
@@ -1078,13 +1088,22 @@ fun ReaderScreen(
         }
     }
 
-    LaunchedEffect(player.index, player.playing, player.wholeUnit) {
+    LaunchedEffect(player.index, player.playing, player.wholeUnit, selection.value != null) {
         // 只有整单元连播时 index 才对应 nodes 的下标；单段播放是它自己的小队列
         if (!player.playing || !player.wholeUnit) return@LaunchedEffect
-        if (System.currentTimeMillis() - userScrolledAt < 6_000) return@LaunchedEffect
+        // 正在选词：别跟用户抢屏幕
+        if (selection.value != null) return@LaunchedEffect
+        val now = System.currentTimeMillis()
+        if (now - userScrolledAt < 6_000) return@LaunchedEffect
+        if (now - userPressedAt < 1_500) return@LaunchedEffect
         val target = nodes.listIndexOf(player.index, unit.words.size) ?: return@LaunchedEffect
         if (listState.layoutInfo.visibleItemsInfo.any { it.index == target }) return@LaunchedEffect
         listState.animateScrollToItem(target)
+    }
+
+    // 选词就先把朗读停住：不然页面还在往下走，刚选中的那段转眼被滚出屏幕
+    LaunchedEffect(selection.value != null) {
+        if (selection.value != null) player.pause()
     }
 
     val progressTick = StudyProgress.version
@@ -1112,12 +1131,11 @@ fun ReaderScreen(
 
     val answers = remember(unit.id) { mutableStateMapOf<Int, Int>() }
     val scale = state.config.fontScale
-    var selection by remember { mutableStateOf<SelectionPayload?>(null) }
     var showFont by remember { mutableStateOf(false) }
     var showPlayOptions by remember { mutableStateOf(false) }
 
     // 选区打开时，返回键先收动作条，而不是退出阅读
-    BackHandler(enabled = selection != null) { selection = null }
+    BackHandler(enabled = selection.value != null) { selection.value = null }
 
     if (showFont) {
         FontScaleDialog(
@@ -1212,7 +1230,21 @@ fun ReaderScreen(
         },
         containerColor = MaterialTheme.colorScheme.background
     ) { pad ->
-        Box(modifier = Modifier.fillMaxSize().padding(pad)) {
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(pad)
+                // 只在 Initial 阶段瞄一眼按下，不消费事件，列表和选词照常收
+                .pointerInput(Unit) {
+                    awaitEachGesture {
+                        awaitFirstDown(
+                            requireUnconsumed = false,
+                            pass = PointerEventPass.Initial
+                        )
+                        userPressedAt = System.currentTimeMillis()
+                    }
+                }
+        ) {
             LazyColumn(
                 state = listState,
                 modifier = Modifier.fillMaxSize(),
@@ -1240,18 +1272,18 @@ fun ReaderScreen(
                 }
 
                 items(unit.words, key = { it.idx }) { word ->
-                    WordCard(unit, word, player, scale, learned = word.idx in learned) { selection = it }
+                    WordCard(unit, word, player, scale, learned = word.idx in learned) { selection.value = it }
                 }
 
                 item {
-                    ReadingCard(unit, player, scale) { selection = it }
+                    ReadingCard(unit, player, scale) { selection.value = it }
                 }
 
-                questions(unit, player, answers, scale) { selection = it }
+                questions(unit, player, answers, scale) { selection.value = it }
             }
 
             // 翻出去几屏才浮出来，一键回到“该学的那一格”，不打扰正在读的段落
-            if (farFromResume && !player.wholeUnit && selection == null) {
+            if (farFromResume && !player.wholeUnit && selection.value == null) {
                 Surface(
                     modifier = Modifier
                         .align(Alignment.BottomEnd)
@@ -1278,7 +1310,21 @@ fun ReaderScreen(
                 }
             }
 
-            if (player.wholeUnit && player.current != null) {
+            // 选区优先：连播时播放条原本独占了底部，选词后动作条没地方显示，
+            // 「问 AI」就点不出来。现在选词时播放条让位，收掉动作条再回来。
+            val picked = selection.value
+            if (picked != null) {
+                Box(modifier = Modifier.align(Alignment.BottomCenter)) {
+                    SelectionActionBar(
+                        payload = picked,
+                        state = state,
+                        onClose = {
+                            picked.dismiss()
+                            selection.value = null
+                        }
+                    )
+                }
+            } else if (player.wholeUnit && player.current != null) {
                 Box(modifier = Modifier.align(Alignment.BottomCenter)) {
                     PlayBar(
                         nodes = nodes,
@@ -1290,16 +1336,6 @@ fun ReaderScreen(
                         onClose = {
                             breakpoint = player.index
                             player.stop()
-                        }
-                    )
-                }
-            } else selection?.let { payload ->
-                Box(modifier = Modifier.align(Alignment.BottomCenter)) {
-                    SelectionActionBar(
-                        payload = payload,
-                        onClose = {
-                            payload.dismiss()
-                            selection = null
                         }
                     )
                 }

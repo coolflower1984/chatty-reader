@@ -39,6 +39,8 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import com.chatty.reader.AppState
+import com.chatty.reader.launch.AppLauncher
 import com.chatty.reader.share.AskAi
 import com.chatty.reader.study.VocabBook
 import androidx.compose.runtime.CompositionLocalProvider
@@ -136,9 +138,21 @@ fun SelectableText(
 @Composable
 fun SelectionActionBar(
     payload: SelectionPayload,
+    state: AppState,
     onClose: () -> Unit
 ) {
     val context = LocalContext.current
+    // 设置里可能把目标换成了别的应用，按钮文案跟着走，别写死「元宝」
+    val askName = remember(state.config.askPkg) {
+        val pkg = state.config.askPkg.trim()
+        if (pkg.isEmpty()) "AI"
+        else AppLauncher.labelOf(context, pkg)?.trim()?.takeIf { it.isNotEmpty() } ?: "AI"
+    }
+    val sentTip = if (state.config.askPkg.trim().isEmpty()) {
+        "已复制，选一个 AI 应用"
+    } else {
+        "已送到$askName，按发送即可"
+    }
 
     fun grab(): String {
         val copy = payload.copy ?: return ""
@@ -194,11 +208,13 @@ fun SelectionActionBar(
                         text = picked,
                         kind = kindOf(picked),
                         unitId = payload.unitId,
-                        contextText = payload.paragraph
+                        contextText = payload.paragraph,
+                        template = state.config.askPrompt,
+                        targetPkg = state.config.askPkg
                     )
                     val tail = when (outcome) {
-                        AskAi.Outcome.SENT -> "已送到元宝，按发送即可"
-                        AskAi.Outcome.CHOOSER -> "文字已复制，选一个 AI 应用"
+                        AskAi.Outcome.SENT -> sentTip
+                        AskAi.Outcome.CHOOSER -> "文字已复制，粘到 $askName 里发送"
                         AskAi.Outcome.FAILED -> "没找到能接收文字的应用"
                     }
                     Toast.makeText(
@@ -210,7 +226,14 @@ fun SelectionActionBar(
                 },
                 modifier = Modifier.fillMaxWidth(),
                 contentPadding = PaddingValues(horizontal = 8.dp, vertical = 10.dp)
-            ) { Text("＋ 生词本并问元宝", style = MaterialTheme.typography.labelMedium) }
+            ) {
+                Text(
+                    "＋ 生词本并问$askName",
+                    style = MaterialTheme.typography.labelMedium,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
+                )
+            }
 
             Spacer(Modifier.height(8.dp))
 
@@ -252,13 +275,15 @@ fun SelectionActionBar(
                             text = picked,
                             kind = kindOf(picked),
                             unitId = payload.unitId,
-                            contextText = payload.paragraph
+                            contextText = payload.paragraph,
+                            template = state.config.askPrompt,
+                            targetPkg = state.config.askPkg
                         )
                         Toast.makeText(
                             context,
                             when (outcome) {
-                                AskAi.Outcome.SENT -> "已送到元宝，按发送即可"
-                                AskAi.Outcome.CHOOSER -> "选一个 AI 应用，文字已复制"
+                                AskAi.Outcome.SENT -> sentTip
+                                AskAi.Outcome.CHOOSER -> "文字已复制，粘到 $askName 里发送"
                                 AskAi.Outcome.FAILED -> "没找到能接收文字的应用"
                             },
                             Toast.LENGTH_SHORT
@@ -267,7 +292,14 @@ fun SelectionActionBar(
                     },
                     modifier = Modifier.weight(1f),
                     contentPadding = PaddingValues(horizontal = 8.dp, vertical = 9.dp)
-                ) { Text("只问元宝", style = MaterialTheme.typography.labelMedium) }
+                ) {
+                    Text(
+                        "只问$askName",
+                        style = MaterialTheme.typography.labelMedium,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis
+                    )
+                }
             }
 
             Row(verticalAlignment = Alignment.CenterVertically) {

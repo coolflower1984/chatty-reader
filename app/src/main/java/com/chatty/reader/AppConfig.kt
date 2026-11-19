@@ -5,6 +5,7 @@ import android.content.SharedPreferences
 import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
+import com.chatty.reader.share.AskAi
 
 /**
  * 全部可配置项。字段用 Compose 状态承载，界面读到变化会自动重组；
@@ -194,6 +195,37 @@ class AppConfig(context: Context) {
             sp.edit().putString(K_GPT, v).apply()
         }
 
+    // ---------- 长按选词时发给谁 ----------
+
+    /** 默认元宝；改成空串就是每次都弹系统选择器 */
+    private val _askPkg = mutableStateOf(
+        sp.getString(K_ASK_PKG, null) ?: AskAi.YUANBAO_PKG
+    )
+    var askPkg: String
+        get() = _askPkg.value
+        set(v) {
+            _askPkg.value = v
+            sp.edit().putString(K_ASK_PKG, v).apply()
+        }
+
+    /** 发给 AI 的那段话，占位符见 AskAi.DEFAULT_TEMPLATE */
+    private val _askPrompt = mutableStateOf(
+        sp.getString(K_ASK_PROMPT, null) ?: AskAi.DEFAULT_TEMPLATE
+    )
+    var askPrompt: String
+        get() = _askPrompt.value
+        set(v) {
+            _askPrompt.value = v
+            sp.edit().putString(K_ASK_PROMPT, v).apply()
+        }
+
+    fun resetAskPrompt() {
+        askPrompt = AskAi.DEFAULT_TEMPLATE
+    }
+
+    val askPromptIsDefault: Boolean
+        get() = askPrompt.trim() == AskAi.DEFAULT_TEMPLATE.trim()
+
     companion object {
         const val K_LIST = "list_no"
         const val K_GROUP = "group_no"
@@ -211,6 +243,8 @@ class AppConfig(context: Context) {
         const val K_FONT_SCALE = "reader_font_scale"
         const val K_WORD_REPEAT = "play_word_repeat"
         const val K_LOOP_UNIT = "play_loop_unit"
+        const val K_ASK_PKG = "ask_pkg"
+        const val K_ASK_PROMPT = "ask_prompt"
 
         const val MIN_SCALE = 0.85f
         const val MAX_SCALE = 1.5f
