@@ -99,12 +99,12 @@
 git clone https://github.com/coolflower1984/chatty-reader.git
 cd chatty-reader
 ./gradlew assembleDebug          # 产物：app/build/outputs/apk/debug/app-debug.apk
-./gradlew testDebugUnitTest      # 65 条单元测试
+./gradlew testDebugUnitTest      # 69 条单元测试
 ```
 
 `local.properties` 里写 `sdk.dir=/path/to/android-sdk`（该文件已在 `.gitignore` 中）。
 
-安装包放在 [Releases](https://github.com/coolflower1984/chatty-reader/releases) 页：进最新一版（当前 v5.0），在 Assets 里点 `chatty-reader-v5.0.apk` 下载。仓库只存源码与内置音频，不放二进制。
+安装包放在 [Releases](https://github.com/coolflower1984/chatty-reader/releases) 页：进最新一版（当前 v5.1），在 Assets 里点 `chatty-reader-v5.1.apk` 下载。仓库只存源码与内置音频，不放二进制。
 
 ---
 
@@ -140,7 +140,7 @@ app/src/main/java/com/chatty/reader/
 │   ├── VocabScreen.kt           生词本列表
 │   ├── SelectionMenu.kt         长按选中的操作条
 │   ├── UpdateDialog.kt          发现新版本的弹窗
-│   ├── SettingsScreen.kt        权限、时长、固定要求
+│   ├── SettingsScreen.kt        可折叠设置：问 AI 的应用与提示词、朗读、老流程
 │   └── Sheets.kt                词库选择、发送预览
 ├── share/AskAi.kt               提示词模板与定向分享（目标应用可配）
 ├── watch/                       旧流程：前台监听、状态机、超级岛
